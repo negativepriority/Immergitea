@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/eventi.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  
+    <script>
+      let mybutton = document.getElementById("myBtn");
+    
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    
+      // Aggiungi un event listener per l'evento 'touchmove' sui dispositivi mobili
+      window.addEventListener('touchmove', function() {
+        scrollFunction();
+      });
+    </script>
+  
+  
+    <div class="topnav" id="myTopnav">
+      <a href="#" class="active">Immergitea</a>
+      <a href="#">Lavorazione del tè</a>
+      <div class="dropdown">
+        <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Tè Nero</a>
+          <a href="#">Tè Verde</a>
+          <a href="#">Tè Giallo</a>
+          <a href="#">Tè Bianco</a>
+          <a href="#">Tè Oolong</a>
+          <a href="#">Tè Pst Fermentato</a>
+        </div>
+      </div>
+      <div class="dropdown">
+    <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Giappone</a>
+          <a href="#">Cina</a>
+          <a href="#">India</a>
+          <a href="#">Sri Lanka</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Hong Kong</a>
+          <a href="#">Darjeeling</a>
+          <a href="#">Longjing</a>
+          <a href="#">Uji</a>
+          <a href="#">Londra</a>
+          <a href="#">Torino</a>
+        </div>
+      </div>
+      <a href="#">Contatti</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+     <main>
+        <section class="coper">
+          <div class="cope">
+    <h1 class="tit-festival">Festival del tè ad Hong Kong</h1>
+    <p> Il Festival del Tè di <span class="ho"> Hong Kong</span> è uno dei più grandi eventi del tè in Asia, infatti i partecipanti hanno l'opportunità di esplorare una vasta gamma di tè provenienti da diverse regioni della Cina e di tutto il mondo.</p>
+    </div>
+    </section>
+    
+    <section class="grid-eventi">
+    <div class="par-eventi">
+    <p>Le bancarelle colorate del Festival del Tè di Hong Kong sono uno degli elementi più affascinanti e invitanti dell'evento offrono un'ampia varietà di tè provenienti da diverse regioni della Cina e da ogni parte del mondo.</p>
+    <img class="imm" src="img/8-eventi/1-hong_kong/1-intestazione.png">
+    </div>
+    </section>
+   
+    <section class="coppie">
+      <div class="coppie_para">
+          <img src="img/8-eventi/1-hong_kong/2-coppia.png">
+          <img src="img/8-eventi/1-hong_kong/3-coppia.png">
+          </div>
+          <div class="text">
+          <p>
+              Il festival offre un'ampia varietà di esperienze per i visitatori, infatti gli ospiti possono degustare diversi tè pregiati e apprezzare i diversi sapori e aromi. Inoltre possono assistere a coinvolgenti dimostrazioni di preparazione del tè.<br><br>Per coloro che desiderano approfondire la cultura del tè, il festival offre una serie di stimolanti seminari. Inoltre, i partecipanti hanno la possibilità di acquistare tè di alta qualità e accessori correlati.
+          </p>
+      </div>
+  </section>
+
+    <section class="grid-eventi">
+        <div class="par-eventi">
+        <p>L'evento si svolge solitamente ad agosto presso il Centro Convenzioni ed Esposizioni di Hong Kong. Per partecipare, è possibile acquistare i biglietti online attraverso il sito web ufficiale dell'evento o presso i punti vendita designati.</p>
+        <img class="imm" src="img/8-eventi/1-hong_kong/4-finale.png">
+        </div>
+        </section>
+
+
+       </main>
+    </body>
+    </html>
+    

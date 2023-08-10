@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/produttori.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  
+    <script>
+      let mybutton = document.getElementById("myBtn");
+    
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    
+      // Aggiungi un event listener per l'evento 'touchmove' sui dispositivi mobili
+      window.addEventListener('touchmove', function() {
+        scrollFunction();
+      });
+    </script>
+  
+  
+    <div class="topnav" id="myTopnav">
+      <a href="#" class="active">Immergitea</a>
+      <a href="#">Lavorazione del tè</a>
+      <div class="dropdown">
+        <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Tè Nero</a>
+          <a href="#">Tè Verde</a>
+          <a href="#">Tè Giallo</a>
+          <a href="#">Tè Bianco</a>
+          <a href="#">Tè Oolong</a>
+          <a href="#">Tè Pst Fermentato</a>
+        </div>
+      </div>
+      <div class="dropdown">
+    <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Giappone</a>
+          <a href="#">Cina</a>
+          <a href="#">India</a>
+          <a href="#">Sri Lanka</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Hong Kong</a>
+          <a href="#">Darjeeling</a>
+          <a href="#">Longjing</a>
+          <a href="#">Uji</a>
+          <a href="#">Londra</a>
+          <a href="#">Torino</a>
+        </div>
+      </div>
+      <a href="#">Contatti</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+   <main>
+    <section class="copertina">
+      <div class="so">
+<h1>Sri Lanka</h1>
+<p>La storia del tè nello <strong>Sri Lanka,</strong> noto anche come tè di Ceylon, ha una storia affascinante che risale a diversi secoli fa. L'isola di Sri Lanka è situata nell'Oceano Indiano, al largo della costa sud-orientale dell'India, ed è una delle principali regioni produttrici di tè al mondo.</p>
+</div>
+</section>
+<section class="cop">
+<div class="cop">
+  <img src="img/7-produttori_di_tè/4-sri_lanka/1-intestazione.png">
+  </div>
+</section>
+
+<section class="ca">
+ <div class="t">
+    
+      <p> <span class="tit">L’origine</span><br><br>L'introduzione del tè in Sri Lanka risale al periodo coloniale britannico. Prima dell'arrivo degli inglesi, l'isola era nota per la sua produzione di caffè, ma alla fine del XIX secolo una devastante malattia delle piante distrusse gran parte delle piantagioni di caffè. In cerca di una nuova coltura da introdurre, gli inglesi decisero di coltivare il tè.<br><br> La dinastia <strong>Kandiana</strong> (1469-1815) governò gran parte di Sri Lanka per quasi tre secoli, avendo come capitale Kandy, situata nelle colline centrali dell'isola. Durante il loro regno, il tè non era ancora una coltura rilevante a Ceylon, e l'isola era nota per la coltivazione del caffè, introdotto dagli olandesi nel XVII secolo.<br><br> Nel XVIII secolo, tuttavia, il caffè fu colpito da una devastante malattia delle piante, la "ruggine del caffè", che portò alla sua drastica riduzione. Questa crisi nella coltivazione del caffè aprì la strada all'introduzione e allo sviluppo del tè da parte dei britannici durante il periodo coloniale successivo.</p>
+    </div>
+</section>
+
+<section class="a">
+<div class="te">
+  <p>Nel 1824, il coltivatore di caffè britannico <strong>James Taylor</strong> iniziò a piantare alcune piante di tè nella regione di Kandy, situata nelle colline centrali di Ceylon. Taylor è spesso considerato il "padre del tè di Ceylon" per il suo ruolo pionieristico nella promozione e nello sviluppo dell'industria del tè sull'isola.<br><br> Le condizioni climatiche e il terreno della regione di Kandy si rivelarono altamente favorevoli alla coltivazione, ela tecnica di coltivazione e lavorazione del tè fu gradualmente perfezionata dagli agricoltori e dagli esperti inglesi. Presto la qualità del tè di Ceylon divenne rinomata e apprezzata a livello internazionale.</p>
+</div>
+</section>
+
+<section class="car">
+<div class="d">
+<p>Dopo aver ottenuto l'indipendenza dal dominio coloniale britannico nel 1948, lo Sri Lanka iniziò a svilupparsi come uno stato indipendente e prese in mano le redini del proprio destino politico ed economico. <br><br>Una volta ottenuta l'indipendenza, Sri Lanka continuò a coltivare e produrre il tè di Ceylon, che era diventato uno dei marchi distintivi dell'isola. La reputazione di qualità e il gusto distintivo del tè di Ceylon erano già noti a livello internazionale, e questo aiutò l'industria del tè dello Sri Lanka a mantenere e a rafforzare le relazioni commerciali con molti paesi.</p>
+<img class="im" src="img/7-produttori_di_tè/4-sri_lanka/2-paragrafo.png">
+</div>
+</section>
+
+<section class="a">
+<div class="te">
+  <p>Negli anni '50, il governo dello Sri Lanka implementò riforme e politiche per promuovere lo sviluppo dell'industria del tè e per migliorare le condizioni dei lavoratori delle piantagioni. Fu introdotto il <strong>"Tea Research Institute"</strong> (Istituto di Ricerca sul Tè) per condurre studi e ricerche sulla coltivazione e sulla lavorazione del tè, al fine di aumentare la resa e la qualità del prodotto. Inoltre, furono avviate iniziative per fornire assistenza e supporto ai piccoli coltivatori di tè, promuovendo le cooperative e fornendo finanziamenti per migliorare la produzione.</p>
+</div>
+</section>
+
+<section class="c">
+<div class="f"> 
+    <img class="imag" src="img/7-produttori_di_tè/4-sri_lanka/3-paragrafo.png">
+  <p>Inoltre, con l'aumento dell'attenzione sulla sostenibilità ambientale e sociale, sono state introdotte certificazioni di sostenibilità per il tè di Ceylon. Queste certificazioni, come ad esempio il <strong> "Rainforest Alliance"</strong> e il <strong>"Fair Trade",</strong> hanno contribuito a promuovere pratiche agricole e lavorative sostenibili, e hanno rafforzato l'immagine del tè di Ceylon come un prodotto responsabile dal punto di vista sociale ed ambientale. <br><br>Inoltre, le piantagioni di tè nelle colline centrali sono diventate una delle principali attrazioni turistiche del paese, e le visite guidate alle piantagioni di tè, furono una delle esperienze più richieste dai turisti</p>
+  </div>
+</section>
+</section>
+<section class="copertina">
+   </main>
+</body>
+</html>

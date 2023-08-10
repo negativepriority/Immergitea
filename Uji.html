@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/eventi.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  
+    <script>
+      let mybutton = document.getElementById("myBtn");
+    
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    
+      // Aggiungi un event listener per l'evento 'touchmove' sui dispositivi mobili
+      window.addEventListener('touchmove', function() {
+        scrollFunction();
+      });
+    </script>
+  
+  
+    <div class="topnav" id="myTopnav">
+      <a href="#" class="active">Immergitea</a>
+      <a href="#">Lavorazione del tè</a>
+      <div class="dropdown">
+        <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Tè Nero</a>
+          <a href="#">Tè Verde</a>
+          <a href="#">Tè Giallo</a>
+          <a href="#">Tè Bianco</a>
+          <a href="#">Tè Oolong</a>
+          <a href="#">Tè Pst Fermentato</a>
+        </div>
+      </div>
+      <div class="dropdown">
+    <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Giappone</a>
+          <a href="#">Cina</a>
+          <a href="#">India</a>
+          <a href="#">Sri Lanka</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Hong Kong</a>
+          <a href="#">Darjeeling</a>
+          <a href="#">Longjing</a>
+          <a href="#">Uji</a>
+          <a href="#">Londra</a>
+          <a href="#">Torino</a>
+        </div>
+      </div>
+      <a href="#">Contatti</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+     <main>
+        <section class="coper">
+          <div class="cope">
+    <h1 class="tit-festival">Festival del tè a Uji </h1>
+    <p> Il Festival del Tè di <span class="ho"> Uji</span> è un evento tradizionale giapponese dedicato alla celebrazione del tè, in particolare del rinomato tè matcha prodotto nella città di Uji, situata nella prefettura di Kyoto.</p>
+    </div>
+    </section>
+    
+    <section class="grid-eventi">
+    <div class="par-eventi">
+    <p>Durante l'evento, i visitatori possono partecipare a cerimonie del tè tradizionali, assistere a dimostrazioni di preparazione del tè matcha, visitare le piantagioni di tè e scoprire l'arte e la storia del tè giapponese.</p>
+    <img class="imm" src="img/8-eventi/4-uji/1-intestazione.png">
+    </div>
+    </section>
+   
+    <section class="coppie">
+      <div class="coppie_para">
+          <img src="img/8-eventi/4-uji/2-coppia.png">
+          <img src="img/8-eventi/4-uji/3-coppia.png">
+          </div>
+          <div class="text">
+          <p>
+            Questa festività si tiene di solito durante la stagione delle nuove foglie di tè, che cade comunemente a Maggio.<br><br>La maggior parte delle attività del festival è aperta al pubblico gratuitamente, il che offre a tutti i partecipanti l'opportunità di scoprire il mondo affascinante del tè giapponese. Tuttavia, alcune delle cerimonie del tè  o esperienze più approfondite potrebbero richiedere l'acquisto di biglietti separati.
+          </p>
+      </div>
+  </section>
+
+    <section class="grid-eventi">
+        <div class="par-eventi">
+        <p>Per partecipare al Festival del Tè di Uji, è possibile prenotare i biglietti o i pacchetti turistici attraverso il sito web ufficiale dell'evento o tramite agenzie di viaggio specializzate che offrono esperienze a tema tè in Giappone e l'occasione di gustare il delizioso tè matcha.</p>
+        <img class="imm" src="img/8-eventi/4-uji/4-finale.png">
+        </div>
+        </section>
+
+
+       </main>
+    </body>
+    </html>
+    

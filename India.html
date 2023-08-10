@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/produttori.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  
+    <script>
+      let mybutton = document.getElementById("myBtn");
+    
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    
+      // Aggiungi un event listener per l'evento 'touchmove' sui dispositivi mobili
+      window.addEventListener('touchmove', function() {
+        scrollFunction();
+      });
+    </script>
+  
+  
+    <div class="topnav" id="myTopnav">
+      <a href="#" class="active">Immergitea</a>
+      <a href="#">Lavorazione del tè</a>
+      <div class="dropdown">
+        <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Tè Nero</a>
+          <a href="#">Tè Verde</a>
+          <a href="#">Tè Giallo</a>
+          <a href="#">Tè Bianco</a>
+          <a href="#">Tè Oolong</a>
+          <a href="#">Tè Pst Fermentato</a>
+        </div>
+      </div>
+      <div class="dropdown">
+    <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Giappone</a>
+          <a href="#">Cina</a>
+          <a href="#">India</a>
+          <a href="#">Sri Lanka</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Hong Kong</a>
+          <a href="#">Darjeeling</a>
+          <a href="#">Longjing</a>
+          <a href="#">Uji</a>
+          <a href="#">Londra</a>
+          <a href="#">Torino</a>
+        </div>
+      </div>
+      <a href="#">Contatti</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+   <main>
+    <section class="copertina">
+      <div class="so">
+<h1>India</h1>
+<p> La storia del tè in <strong> India</strong> ha radici antiche che risalgono a diversi secoli fa. Sebbene il tè sia originario della Cina, è stato attraverso la colonizzazione britannica che l'India è diventata uno dei principali produttori e consumatori di tè al mondo.</p>
+</div>
+</section>
+<section class="cop">
+<div class="cop">
+  <img src="img/7-produttori_di_tè/2-india/1-intestazione.png">
+  </div>
+</section>
+
+<section class="ca">
+ <div class="t">
+    
+      <p> <span class="tit">L’origine</span><br><br>L'introduzione del tè in India è attribuita principalmente alla Compagnia britannica delle Indie orientali, un'organizzazione che nel <strong> XVIII secolo </strong> aveva già stabilito una presenza commerciale significativa nel paese. In quel periodo, la Compagnia cercava di competere con il monopolio cinese sul tè, uno dei prodotti più ricercati dell'epoca. <br><br> una spedizione in Assam,  <strong>Robert Bruce  </strong>scoprì per la prima volta un albero di tè, simile a quelli presenti in Cina, ma fino ad allora sconosciuti in India. Questa scoperta si rivelò una svolta epocale nella storia del tè in India.<br><br> Purtroppo, Bruce non vide mai completamente realizzato il suo sogno di sviluppare l'industria del tè in India. Fu suo fratello, Charles Alexander Bruce, che continuò gli sforzi di Robert dopo la sua morte prematura. Charles lavorò instancabilmente per promuovere la coltivazione del tè nell'Assam e ottenne il sostegno della Compagnia britannica delle Indie orientali per la sua impresa.</p>
+    </div>
+</section>
+
+<section class="a">
+<div class="te">
+  <p>La scoperta dell'albero di tè selvatico segnò un momento epocale nella storia dell'India, aprendo le porte alla promettente avventura della coltivazione commerciale del tè nel paese. Questa scoperta, fatta con un mix di fascino e curiosità, ispirò gli inglesi a intraprendere audaci iniziative nel campo dell'agricoltura, avviando piantagioni di tè in varie regioni dell'India. <br><br>Assam fu uno dei primi luoghi scelti per questa affascinante scommessa, e ben presto le colline di Darjeeling e Nilgiri furono coinvolte in questa fiorente impresa, e divennero note come <strong>"Champagne of Teas"</strong> data l’eccellente qualità dei tè prodotti.</p>
+</div>
+</section>
+
+<section class="car">
+<div class="d">
+<p>Durante il periodo coloniale britannico, la produzione di tè in India ebbe una costante crescita. Furono costruiti numerosi impianti di lavorazione del tè e la coltivazione di questa bevanda divenne un'importante fonte di occupazione per la popolazione locale. <br><br>Parallelamente alla promozione della produzione, gli inglesi cercarono di diffondere il consumo di tè tra gli indiani, incoraggiando l'adozione dell'abitudine britannica dell'ora del tè e instaurando un legame culturale tra i due popoli. Questo sforzo di diffusione culturale contribuì a creare un fenomeno sociale in cui il tè divenne parte integrante della vita quotidiana di molte persone in India.</p>
+<img class="im" src="img/7-produttori_di_tè/2-india/2-paragrafo.png">
+</div>
+</section>
+
+<section class="a">
+<div class="te">
+  <p>Dopo l'indipendenza dell'India nel 1947, l'industria del tè continuò a crescere. Con l'ascesa al potere del governo indiano, si assistette a una transizione nella gestione delle piantagioni di tè, precedentemente sotto il controllo britannico.<br><br> Un elemento chiave di questa trasformazione fu l'introduzione di nuove e innovative tecniche di coltivazione e lavorazione del tè. Scienziati agricoli e esperti del settore collaborarono per sviluppare metodi avanzati che migliorassero la qualità e la resa delle coltivazioni, aprendo nuove prospettive di crescita per gli agricoltori.</p>
+</div>
+</section>
+
+<section class="c">
+<div class="f"> 
+    <img class="imag" src="img/7-produttori_di_tè/2-india/3-paragrafo.png">
+  <p>Le regioni di Assam, Darjeeling e Nilgiri mantengono la loro rilevanza come importanti centri di produzione, celebrando una lunga tradizione di coltivazione del tè. Tuttavia, l'amore per questa bevanda si è esteso a molte altre parti del paese, con nuove aree che entrano nel panorama della produzione di tè.<br><br> La gamma di tè prodotti in India è incredibilmente vasta e continua a sorprendere gli intenditori di tutto il mondo. Oltre al classico tè nero, amato per il suo gusto ricco e robusto, l'India brilla per la produzione di tè verde, noto per le sue proprietà benefiche per la salute e la freschezza del sapore.</p>
+  </div>
+</section>
+</section>
+<section class="copertina">
+   </main>
+</body>
+</html>

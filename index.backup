@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -94,7 +94,7 @@
   
  <main>
 
-  <div class="container-1-home">
+  <div class="image-container-1-home">
    <img src="img/1-home/1-home.png">
    <div class="overlay-text-immergitea">
     <h1>Immergitea</h1>
@@ -107,11 +107,11 @@
         sei arrivato nel posto giusto.</p>
     </div>
     <div class="image4">
-      <img src="img/1-home/2-paragrafo.png" class="ahah" >
+      <img src="img/1-home/2-paragrafo.png">
     </div>
   </div>
 
-  <section class="contenitore-2">
+  <section class="contenitore">
   <section class="sezione-gruppo-rettangolo-home">
     <div class="div-gruppo-rettangolo-home">
     <img src="img/1-home/3-rettangolo.png">
@@ -123,7 +123,20 @@
     </div>
     </section>
   </section>
-
+  <section class="contenitore-ver">
+    <section class="sezione-gruppo-rettangolo-home-ver">
+      <div class="div-gruppo-rettangolo-home-ver">
+        <img src="img/1-home/3-rettangolo.png">
+      </div>
+      <div class="div-testo-ver">
+        <p>Il tè ha molte proprietà benefiche infatti contiene una serie di composti bioattivi, 
+          tra cui polifenoli, catechine, flavonoidi e teina (una forma di caffeina). 
+          Questi composti conferiscono al tè diverse proprietà antiossidanti, antinfiammatorie 
+          e antimicrobiche. Numerosi studi scientifici hanno dimostrato che il consumo regolare di tè
+          può contribuire a migliorare la salute generale e prevenire alcune malattie.</p>
+      </div>
+    </section>
+  </section>
   <section class="con-noi">
     <h2>Immergiti con noi nel mondo del tè</h2>
     <div class="container-sx-centrale">

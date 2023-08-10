@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/eventi.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  
+    <script>
+      let mybutton = document.getElementById("myBtn");
+    
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    
+      // Aggiungi un event listener per l'evento 'touchmove' sui dispositivi mobili
+      window.addEventListener('touchmove', function() {
+        scrollFunction();
+      });
+    </script>
+  
+  
+    <div class="topnav" id="myTopnav">
+      <a href="#" class="active">Immergitea</a>
+      <a href="#">Lavorazione del tè</a>
+      <div class="dropdown">
+        <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Tè Nero</a>
+          <a href="#">Tè Verde</a>
+          <a href="#">Tè Giallo</a>
+          <a href="#">Tè Bianco</a>
+          <a href="#">Tè Oolong</a>
+          <a href="#">Tè Pst Fermentato</a>
+        </div>
+      </div>
+      <div class="dropdown">
+    <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Giappone</a>
+          <a href="#">Cina</a>
+          <a href="#">India</a>
+          <a href="#">Sri Lanka</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Hong Kong</a>
+          <a href="#">Darjeeling</a>
+          <a href="#">Longjing</a>
+          <a href="#">Uji</a>
+          <a href="#">Londra</a>
+          <a href="#">Torino</a>
+        </div>
+      </div>
+      <a href="#">Contatti</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+     <main>
+        <section class="coper">
+          <div class="cope">
+    <h1 class="tit-festival">Festival del tè a Lonjing </h1>
+    <p>Nella regione di HangzhouIl è possibile partecipare al Festival del Tè di <span class="ho"> Lonjing,</span>  famosa per la produzione di tè Longjing, uno dei tè verdi più rinomati della Cina. </p>
+    </div>
+    </section>
+    
+    <section class="grid-eventi">
+    <div class="par-eventi">
+    <p>Durante l'evento, i partecipanti possono visitare le piantagioni di tè, assistere a cerimonie del tè tradizionali, partecipare a dimostrazioni sulla preparazione del tè e imparare la storia di questo tè.</p>
+    <img class="imm" src="img/8-eventi/3-longjing/1-intestazione.png">
+    </div>
+    </section>
+   
+    <section class="coppie">
+      <div class="coppie_para">
+          <img src="img/8-eventi/3-longjing/2-coppia.png">
+          <img src="img/8-eventi/3-longjing/3-coppia.png">
+          </div>
+          <div class="text">
+          <p>
+            La cerimonia del tè è un altro aspetto fondamentale e affascinante del festival, durante la quale i partecipanti possono immergersi in riti e rituali secolari associati al tè Longjing.<br><br> Queste cerimonie millenarie sono intrise di tradizione e significato culturale profondo, e parteciparvi offre una prospettiva unica sulla profonda connessione tra il tè e la vita quotidiana dei locali, permettendo di comprendere come il tè sia parte della loro cultura.
+          </p>
+      </div>
+  </section>
+
+    <section class="grid-eventi">
+        <div class="par-eventi">
+        <p>Il festival si svolge solitamente ad aprile. <br><br>Per poter partecipare all'evento e ottenere informazioni aggiornate sulle date e le modalità di prenotazione è possibile visitare il sito web ufficiale.</p>
+        <img class="imm" src="img/8-eventi/3-longjing/4-finale.png">
+        </div>
+        </section>
+
+
+       </main>
+    </body>
+    </html>
+    

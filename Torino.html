@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/eventi.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  
+    <script>
+      let mybutton = document.getElementById("myBtn");
+    
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    
+      // Aggiungi un event listener per l'evento 'touchmove' sui dispositivi mobili
+      window.addEventListener('touchmove', function() {
+        scrollFunction();
+      });
+    </script>
+  
+  
+    <div class="topnav" id="myTopnav">
+      <a href="#" class="active">Immergitea</a>
+      <a href="#">Lavorazione del tè</a>
+      <div class="dropdown">
+        <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Tè Nero</a>
+          <a href="#">Tè Verde</a>
+          <a href="#">Tè Giallo</a>
+          <a href="#">Tè Bianco</a>
+          <a href="#">Tè Oolong</a>
+          <a href="#">Tè Pst Fermentato</a>
+        </div>
+      </div>
+      <div class="dropdown">
+    <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Giappone</a>
+          <a href="#">Cina</a>
+          <a href="#">India</a>
+          <a href="#">Sri Lanka</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Hong Kong</a>
+          <a href="#">Darjeeling</a>
+          <a href="#">Longjing</a>
+          <a href="#">Uji</a>
+          <a href="#">Londra</a>
+          <a href="#">Torino</a>
+        </div>
+      </div>
+      <a href="#">Contatti</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+     <main>
+        <section class="coper">
+          <div class="cope">
+    <h1 class="tit-festival">Festival del tè a Torino </h1>
+    <p> Il Festival del Tè di <span class="ho"> Torino</span>  è un'esperienza coinvolgente che offre l'opportunità  di esplorare una vasta selezione di tè provenienti da diverse regioni e paesi.</p>
+    </div>
+    </section>
+    
+    <section class="grid-eventi">
+    <div class="par-eventi">
+    <p>A questo evento si può anche partecipare a dei  workshop tematici, dove verranno aprofonditi aspetti specifici del tè, come la cerimonia del tè giapponese o le tecniche di assaggio professionale.
+    </p>
+    <img class="imm" src="img/8-eventi/6-torino/1-intestazione.png">
+    </div>
+    </section>
+   
+    <section class="coppie">
+      <div class="coppie_para">
+          <img src="img/8-eventi/6-torino/2-coppia.png">
+          <img src="img/8-eventi/6-torino/3-coppia.png">
+          </div>
+          <div class="text">
+          <p>
+            L'evento promuove anche la cultura e le tradizioni del tè attraverso spettacoli, conferenze e mostre. Gli ospiti possono assistere a performance artistiche che celebrano la bellezza e l'eleganza della cultura del tè.<br><br>  Questo evento  si svolge  in primavera o in autunno e l'accesso all'evento è generalmente gratuito. Tuttavia, alcune attività potrebbero richiedere una registrazione anticipata o l'acquisto di biglietti separati a causa della disponibilità limitata o della forte richiesta.
+            
+          </p>
+      </div>
+  </section>
+
+    <section class="grid-eventi">
+        <div class="par-eventi">
+        <p>Per ulteriori informazioni sulle date e sulle modalità di partecipazione, è consigliabile consultare il sito web ufficiale del Festival del Tè di Torino, che fornisce aggiornamenti sul programma e sulle varie attività offerte da questa meravigliosa città.</p>
+        <img class="imm" src="img/8-eventi/6-torino/4-finale.png">
+        </div>
+        </section>
+
+
+       </main>
+    </body>
+    </html>
+    

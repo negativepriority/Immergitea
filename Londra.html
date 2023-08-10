@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/eventi.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  
+    <script>
+      let mybutton = document.getElementById("myBtn");
+    
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    
+      // Aggiungi un event listener per l'evento 'touchmove' sui dispositivi mobili
+      window.addEventListener('touchmove', function() {
+        scrollFunction();
+      });
+    </script>
+  
+  
+    <div class="topnav" id="myTopnav">
+      <a href="#" class="active">Immergitea</a>
+      <a href="#">Lavorazione del tè</a>
+      <div class="dropdown">
+        <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Tè Nero</a>
+          <a href="#">Tè Verde</a>
+          <a href="#">Tè Giallo</a>
+          <a href="#">Tè Bianco</a>
+          <a href="#">Tè Oolong</a>
+          <a href="#">Tè Pst Fermentato</a>
+        </div>
+      </div>
+      <div class="dropdown">
+    <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Giappone</a>
+          <a href="#">Cina</a>
+          <a href="#">India</a>
+          <a href="#">Sri Lanka</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Hong Kong</a>
+          <a href="#">Darjeeling</a>
+          <a href="#">Longjing</a>
+          <a href="#">Uji</a>
+          <a href="#">Londra</a>
+          <a href="#">Torino</a>
+        </div>
+      </div>
+      <a href="#">Contatti</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+     <main>
+        <section class="coper">
+          <div class="cope">
+    <h1 class="tit-festival">Festival del tè a Londra </h1>
+    <p> Il Festival del Tè di <span class="ho"> Londra</span> avviene generalmente nel mese di Marzo, presso una delle sedi espositive di Londra, come il Business Design Centre o l'Olympia London. </p>
+    </div>
+    </section>
+    
+    <section class="grid-eventi">
+    <div class="par-eventi">
+    <p>L'atmosfera vibrante e stimolante del festival offre un'esperienza unica, permettendo ai partecipanti di esplorare un mondo di sapori, profumi e tradizioni legate al tè, e alla tipica cultura popolare londinese.
+    </p>
+    <img class="imm" src="img/8-eventi/5-londra/1-intestazione.png">
+    </div>
+    </section>
+   
+    <section class="coppie">
+      <div class="coppie_para">
+          <img src="img/8-eventi/5-londra/2-coppia.png">
+          <img src="img/8-eventi/5-londra/3-coppia.png">
+          </div>
+          <div class="text">
+          <p>
+            Sono presenti diversi stand che offrono una vasta selezione di tè provenienti da diverse regioni del mondo. I visitatori possono  degustare e apprezzare la diversità dei sapori e degli aromi.<br><br> Oltre alle degustazioni, il festival offre un'ampia gamma di attività interattive, tra cui dimostrazioni di preparazione del tè, workshop sulla degustazione, presentazioni di esperti del settore e dimostrazioni di cerimonie del tè tradizionali.
+           
+            
+          </p>
+      </div>
+  </section>
+
+    <section class="grid-eventi">
+        <div class="par-eventi">
+        <p>É possibile acquistare i biglietti online tramite il sito web ufficiale dell'evento, il prezzo può variare a seconda delle opzioni di accesso scelte, che possono includere l'accesso generale all'evento o l'accesso a particolari esperienze o workshop.</p>
+        <img class="imm" src="img/8-eventi/5-londra/4-finale.png">
+        </div>
+        </section>
+
+
+       </main>
+    </body>
+    </html>
+    

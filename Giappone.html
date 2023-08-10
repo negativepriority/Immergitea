@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/produttori.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  
+    <script>
+      let mybutton = document.getElementById("myBtn");
+    
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    
+      // Aggiungi un event listener per l'evento 'touchmove' sui dispositivi mobili
+      window.addEventListener('touchmove', function() {
+        scrollFunction();
+      });
+    </script>
+  
+  
+    <div class="topnav" id="myTopnav">
+      <a href="#" class="active">Immergitea</a>
+      <a href="#">Lavorazione del tè</a>
+      <div class="dropdown">
+        <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Tè Nero</a>
+          <a href="#">Tè Verde</a>
+          <a href="#">Tè Giallo</a>
+          <a href="#">Tè Bianco</a>
+          <a href="#">Tè Oolong</a>
+          <a href="#">Tè Pst Fermentato</a>
+        </div>
+      </div>
+      <div class="dropdown">
+    <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Giappone</a>
+          <a href="#">Cina</a>
+          <a href="#">India</a>
+          <a href="#">Sri Lanka</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Hong Kong</a>
+          <a href="#">Darjeeling</a>
+          <a href="#">Longjing</a>
+          <a href="#">Uji</a>
+          <a href="#">Londra</a>
+          <a href="#">Torino</a>
+        </div>
+      </div>
+      <a href="#">Contatti</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+   <main>
+    <section class="copertina">
+      <div class="so">
+<h1>Giappone</h1>
+<p>La storia del tè in <strong>Giappone</strong>  risale a molti secoli fa ed è strettamente legata all'arrivo del tè dalla Cina. Si ritiene che il tè sia stato introdotto nel paese nel IX secolo, durante il periodo<strong>Heian</strong>  (794-1185), da monaci buddisti e diplomatici giapponesi che visitavano la Cina.</p>
+</div>
+</section>
+<section class="cop">
+<div class="cop">
+  <img src="img/7-produttori_di_tè/3-giappone/1-intestazione.png">
+  </div>
+</section>
+
+<section class="ca">
+ <div class="t">
+    
+      <p> <span class="tit">L’origine</span><br><br>Durante il periodo <strong>Kamakura</strong> (1185-1333), il consumo del tè conobbe una notevole crescita e la cultura del tè in Giappone iniziò a svilupparsi con un fascino unico.<br><br> L'entusiasmo per il tè portò all'innovazione e furono sviluppati nuovi metodi di coltivazione e preparazione del tè. I maestri del tè, con grande dedizione e passione, perfezionarono le tecniche di coltivazione delle piante di tè e sperimentarono nuove modalità di lavorazione delle foglie per ottenere sapori e aromi distintivi. Questi progressi contribuirono a consolidare la reputazione del tè giapponese per la sua eccezionale qualità e unicità, tanto da conquistare il palato di molti amanti del tè in tutto il mondo.<br><br> Con il passare dei secoli, la cerimonia del tè divenne una pratica sempre più diffusa, entrando a far parte delle tradizioni culturali giapponesi. Fu particolarmente nella classe dei samurai e della nobiltà guerriera giapponese che questa pratica acquistò grande importanza.</p>
+    </div>
+</section>
+
+<section class="a">
+<div class="te">
+  <p>Durante il periodo <strong>Azuchi-Momoyama</strong> (1568-1603) e il periodo Edo (1603-1868), la cerimonia del tè fiorì in tutta la sua magnificenza, raggiungendo un'apoteosi di sviluppo senza precedenti. Le élite culturali e i potenti daimyo (signori feudali) dell'epoca si avvicinarono con fervore a questa antica tradizione, vedendo nella cerimonia del tè una manifestazione sublime della raffinatezza e dell'eleganza. Durante questo periodo dorato, grandi maestri del tè emersero, contribuendo allo sviluppo filosofico ed estetico della cerimonia, in cui,<strong> Sen no Rikyū,</strong> fu uno dei più celebri maestri del tè nella storia giapponese.</p>
+</div>
+</section>
+
+<section class="car">
+<div class="d">
+<p>Durante il periodo <strong>Meiji </strong>(1868-1912), il Giappone sperimentò un'epoca di profondi cambiamenti e trasformazioni. Con l'apertura ai contatti con il mondo occidentale, il paese intraprese un processo di modernizzazione che toccò ogni aspetto della società, incluso il settore del tè.<br><br>Il tè, da una tradizione secolare e strettamente legata alla cultura nazionale, divenne un bene di scambio su scala globale.<br><br>Le piantagioni di tè crebbero su vasta scala per soddisfare la domanda estera, e l'impiego di moderne tecnologie di produzione e lavorazione migliorò la qualità e l'efficienza del processo produttivo.</p>
+<img class="im" src="img/7-produttori_di_tè/3-giappone/2-paragrafo.png">
+</div>
+</section>
+
+<section class="a">
+<div class="te">
+  <p>Oggi, il tè occupa un posto di rilievo nel cuore e nel quotidiano del popolo giapponese, essendo una bevanda popolare ampiamente apprezzata e consumata in ogni angolo del paese.<br><br> Il tè verde, con la sua freschezza e i suoi benefici per la salute, è il tipo di tè più diffuso e amato in Giappone. Presente in ogni cucina e in ogni casa, il tè verde è una parte integrante della cultura e del rituale quotidiano delle persone. La sua versatilità è un ulteriore motivo per cui è così amato: può essere gustato caldo o freddo, con o senza zucchero, a seconda delle preferenze di ciascuno.</p>
+</div>
+</section>
+
+<section class="c">
+<div class="f"> 
+    <img class="imag" src="img/7-produttori_di_tè/3-giappone/3-paragrafo.png">
+  <p>La cerimonia del tè è ancora praticata da molti appassionati e rappresenta un'importante tradizione culturale in Giappone. La cerimonia del tè, conosciuta come <strong>"chadō"</strong> o <strong>"sado",</strong> è una pratica che va oltre il semplice bere una tazza di tè.<br><br> Ogni passo della cerimonia del tè è meticolosamente studiato e dotato di significato. Dalla preparazione delle foglie di tè, alla raffinata presentazione della tazza al ospite, ogni gesto è un'espressione d'arte e di rispetto. Nell'allestimento della cerimonia, ogni elemento è posizionato con precisione, creando un'atmosfera che favorisce la connessione con la natura.</p>
+  </div>
+</section>
+</section>
+<section class="copertina">
+   </main>
+</body>
+</html>

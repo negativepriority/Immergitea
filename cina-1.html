@@ -4,12 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+<link rel="stylesheet" href="css/produttori.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <h1 class"titolo">ciao</h1>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  
+    <script>
+      let mybutton = document.getElementById("myBtn");
+    
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    
+      // Aggiungi un event listener per l'evento 'touchmove' sui dispositivi mobili
+      window.addEventListener('touchmove', function() {
+        scrollFunction();
+      });
+    </script>
+  
+  
+    <div class="topnav" id="myTopnav">
+      <a href="#" class="active">Immergitea</a>
+      <a href="#">Lavorazione del tè</a>
+      <div class="dropdown">
+        <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Tè Nero</a>
+          <a href="#">Tè Verde</a>
+          <a href="#">Tè Giallo</a>
+          <a href="#">Tè Bianco</a>
+          <a href="#">Tè Oolong</a>
+          <a href="#">Tè Pst Fermentato</a>
+        </div>
+      </div>
+      <div class="dropdown">
+    <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Giappone</a>
+          <a href="#">Cina</a>
+          <a href="#">India</a>
+          <a href="#">Sri Lanka</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Hong Kong</a>
+          <a href="#">Darjeeling</a>
+          <a href="#">Longjing</a>
+          <a href="#">Uji</a>
+          <a href="#">Londra</a>
+          <a href="#">Torino</a>
+        </div>
+      </div>
+      <a href="#">Contatti</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+   <main>
+    <section class="copertina">
+      <div class="so">
+<h1>Cina</h1>
+<p> La storia della coltivazione del tè in <strong>Cina</strong> è millenaria e risale a oltre 2000 anni fa. Il tè è originario della Cina e ha una profonda connessione con la cultura cinese. Secondo la leggenda, la scoperta del tè avvenne intorno al 2737 a.C. durante il regno dell'imperatore Shen Nong.</p>
+</div>
+</section>
+<section class="cop">
+<div class="cop">
+  <img src="img/7-produttori_di_tè/1-cina/1-intestazione.png">
+  </div>
+</section>
+
+<section class="ca">
+ <div class="t">
+    
+      <p> <span class="tit">La leggenda</span><br><br>La leggenda narra che l'imperatore <strong> Shen Nong</strong> fosse un governante sagace e curioso che cercava di migliorare la salute del suo popolo.<br><br> L'imperatore Shen Nong, oltre ad essere un saggio sovrano, era anche noto come il "Divino Coltivatore" poiché dedicò gran parte del suo tempo a scoprire nuove erbe e piante medicinali per migliorare la salute del suo popolo. Durante un viaggio, si fermò a riposare sotto un albero e gli fu offerto un recipiente d'acqua bollente. Mentre l'imperatore riposava, alcune foglie di un albero vicino caddero accidentalmente nel suo recipiente d'acqua bollente. L'acqua prese un colore marrone e un aroma invitante si diffuse nell'aria. Shen Nong decise di provare questa bevanda e ne rimase affascinato dalla sua freschezza e proprietà rinfrescanti.<br><br> La scoperta del tè da parte dell'imperatore Shen Nong segnò l'inizio di una tradizione millenaria diventando sempre più popolare, che si è radicata profondamente nella cultura cinese.</p>
+    </div>
+</section>
+
+<section class="a">
+<div class="te">
+  <p>La coltivazione del tè iniziò a svilupparsi nel corso dei secoli successivi.<br><br> Durante la dinastia <strong> Tang </strong>(618-907 d.C.), ci fu un periodo di grande sviluppo culturale e commerciale in Cina, nel quale il tè divenne una bevanda popolare e la sua coltivazione venne promossa a livello governativo.<br><br> Furono sviluppate nuove tecniche di lavorazione delle foglie di tè e vennero creati i primi giardini di tè, offrendo un controllo maggiore sulla qualità e la quantità della produzione.</p>
+</div>
+</section>
+
+<section class="car">
+<div class="d">
+<p>Durante la dinastia <strong>Song</strong> (960-1279 d.C.), la coltivazione del tè raggiunse un livello ancora più alto di raffinatezza. Furono identificate varie varietà di tè e si iniziarono a sviluppare metodi più precisi per la sua coltivazione e preparazione.<br></br> Furono scritte importanti opere sul tè, come il "Cha Jing" (Il classico del tè) di Lu Yu, che è considerato il primo trattato completo sul tè, il quale descriveva dettagliatamente le varie fasi della produzione del tè, dai metodi di coltivazione delle piante alle tecniche di lavorazione delle foglie e alle tradizioni della cerimonia del tè.  La dinastia Song fu un periodo di grande innovazione nel mondo del tè, in cui il tè divenne molto più di una semplice bevanda.</p>
+<img class="im" src="img/7-produttori_di_tè/1-cina/2-paragrafo.png">
+</div>
+</section>
+
+<section class="a">
+<div class="te">
+  <p>Durante la dinastia <strong>Ming</strong> (1368-1644 d.C.), la cultura del tè raggiunse un livello di raffinatezza e prosperità mai visto prima. Questo periodo segnò un'epoca d'oro per il tè, con notevoli progressi nella produzione e nella lavorazione delle foglie.<br></br> Gli esperti tè master del periodo Ming svilupparono nuove e innovative tecniche di produzione del tè, mirate a ottenere risultati ancora migliori. Un importante passo avanti fu la scoperta della cottura delle foglie di tè, una pratica volta ad inattivare gli enzimi presenti nelle foglie appena raccolte.</p>
+</div>
+</section>
+
+<section class="c">
+<div class="f"> 
+    <img class="imag" src="img/7-produttori_di_tè/1-cina/3-paragrafo.png">
+  <p>Durante la dinastia <strong>Qing</strong> (1644-1912 d.C.), la coltivazione del tè continuò a espandersi e a diffondersi in molte altre regioni della vasta Cina. Questo periodo segnò un ulteriore sviluppo nella lavorazione e nella produzione del tè, con particolare attenzione alle tecniche specifiche per le diverse varietà di tè.<br><br> Con l'ampliamento delle aree di coltivazione, diverse regioni iniziarono a sviluppare le loro tecniche uniche per lavorare e preparare il tè. Le regioni del sud, Fujian e Guangdong, divennero note per la produzione di tè oolong, una varietà semi-ossidata, conosciuta per i suoi delicati e complessi aromi.</p>
+  </div>
+</section>
+</section>
+<section class="copertina">
+   </main>
 </body>
 </html>
