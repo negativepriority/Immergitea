@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style_tè.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    window.addEventListener('touchmove', function() {
+      scrollFunction();
+    });
+  </script>
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="active">Immergitea</a>
+    <a href="#">Lavorazione del tè</a>
+    <div class="dropdown">
+      <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Tè Nero</a>
+        <a href="#">Tè Verde</a>
+        <a href="#">Tè Giallo</a>
+        <a href="#">Tè Bianco</a>
+        <a href="#">Tè Oolong</a>
+        <a href="#">Tè Pst Fermentato</a>
+      </div>
+    </div>
+    <div class="dropdown">
+  <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Giappone</a>
+        <a href="#">Cina</a>
+        <a href="#">India</a>
+        <a href="#">Sri Lanka</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Hong Kong</a>
+        <a href="#">Darjeeling</a>
+        <a href="#">Longjing</a>
+        <a href="#">Uji</a>
+        <a href="#">Londra</a>
+        <a href="#">Torino</a>
+      </div>
+    </div>
+    <a href="#">Contatti</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+ <main>
+  <section class="intestazione">
+    <h1>Tè giallo</h1>
+    <p>Il tè nero deriva da un processo di lavorazione differente delle foglie di Camellia Sinesis. Il tè nero è la varietà che contiene la più alta percentuale di caffeina. </p>
+    <img src="img/6-tipi_di_tè/3-tè_giallo/1-intestazione.png">
+  </section>
+  <h3>Esempi di tè giallo</h3>
+  <section class="esempi_tè">
+    <div class="lista">
+    <p><b>• Jun Shan Yin Zhen:</b> Il Jun Shan Yin Zhen è un famoso tè giallo proveniente dalla montagna Jun Shan nella provincia cinese di Hunan. È conosciuto per il suo aspetto elegante e le foglie ricoperte di peluria d'argento. Ha un sapore morbido e dolce.<br><br>
+       <b>• Huo Shan Huang Ya:</b> L'Huo Shan Huang Ya è un altro rinomato tè giallo originario della provincia cinese di Anhui. È caratterizzato da foglie grandi e spesse, con un colore giallo dorato. Ha un sapore dolce e tostato, con note di nocciola.<br><br>
+       <b>• Mo Gan Huang Ya:</b> Il Mo Gan Huang Ya è un tè giallo prodotto nella provincia di Jiangxi in Cina. Ha un sapore dolce e leggermente erbaceo, con note floreali e un retrogusto piacevolmente fresco. Le foglie sono sottili e appiattite, con un colore giallo brillante.<br><br>
+       <b>• Meng Ding Huang Ya:</b> Il Meng Ding Huang Ya è uno dei tè gialli più antichi prodotti nella regione di Sichuan in Cina. È noto per il suo sapore morbido e floreale, con note di orchidea e una dolcezza delicata. Le foglie sono sottili, lunghe e di colore giallo-verde.
+    </p>
+  </div>
+  </section>
+  <section class="sapore">
+    <div class="sapore_aromi">
+    <p>
+      <span class="sottotitolo">Sapore e aromi</span><br><br>
+      Il tè giallo ha un sapore morbido e leggermente dolce, con note di fiori e miele, ed è meno erbaceo e meno astringente. <br><br>
+      Ha una complessità di gusto che può variare dal processo, ma in generale è caratterizzato da una delicatezza e un equilibrio distintivi.<br><br>
+      Il tè giallo contiene una moderata quantità di caffeina, che varia in base alla preparazione e gli consente di essere assunto durante tutto l'arco della giornata.
+    </p>
+    <img src="img/6-tipi_di_tè/3-tè_giallo/2-sapore_aroma.png">
+    </div>
+  </section>
+  <section class="benefici">
+    <div class="benefici_tè">
+    <img src="img/6-tipi_di_tè/3-tè_giallo/3-benefici.png">
+    <p>
+      <span class="sottotitolo">Benefici del tè giallo</span><br><br>
+      Il tè giallo è un ottimo stimolante per la mente, favorisce il colesterolo buono e aiuta a prevenire le malattie cardiovascolari.<br><br>
+      Ha un ottimo apporto di antiossidanti e supporta il sistema immunitario.<br><br>
+      Tuttavia, gli studi sul tè giallo sono ancora limitati e poco si sa sui suoi benefici.
+    </p>
+    </div>
+  </section>
+  <section class="usi">
+    <div class="usi_culinari">
+    <p>
+      <span class="sottotitolo">Usi culinari</span><br><br>
+      Il tè giallo è generalmente apprezzato come bevanda da gustare da sola, senza l'aggiunta di latte o zucchero. Tuttavia, può anche essere utilizzato in cucina per aromatizzare piatti dolci e salati.<br><br>
+      Le foglie di tè giallo possono essere utilizzate per marinare carne, insaporire zuppe o persino aggiungere un tocco unico ai dolci.
+    </p>
+    <img src="img/6-tipi_di_tè/3-tè_giallo/4-usi_culinari.png">
+    </div> 
+  </section>
+ </main>
+</body>

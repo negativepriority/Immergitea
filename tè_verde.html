@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style_tè.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    window.addEventListener('touchmove', function() {
+      scrollFunction();
+    });
+  </script>
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="active">Immergitea</a>
+    <a href="#">Lavorazione del tè</a>
+    <div class="dropdown">
+      <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Tè Nero</a>
+        <a href="#">Tè Verde</a>
+        <a href="#">Tè Giallo</a>
+        <a href="#">Tè Bianco</a>
+        <a href="#">Tè Oolong</a>
+        <a href="#">Tè Pst Fermentato</a>
+      </div>
+    </div>
+    <div class="dropdown">
+  <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Giappone</a>
+        <a href="#">Cina</a>
+        <a href="#">India</a>
+        <a href="#">Sri Lanka</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Hong Kong</a>
+        <a href="#">Darjeeling</a>
+        <a href="#">Longjing</a>
+        <a href="#">Uji</a>
+        <a href="#">Londra</a>
+        <a href="#">Torino</a>
+      </div>
+    </div>
+    <a href="#">Contatti</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+ <main>
+  <section class="intestazione">
+    <h1>Tè verde</h1>
+    <p>Il tè verde è la seconda varietà più diffusa al mondo. Durante la lavorazione le foglie non devono assolutamente subire alcun tipo di ossidazione.</p>
+    <img src="img/6-tipi_di_tè/1-tè_verde/1-intestazione.png">
+  </section>
+  <h3>Esempi di tè verde</h3>
+  <section class="esempi_tè">
+    <div class="lista">
+    <p><b>• Matcha:</b> Il Matcha è un tè verde in polvere utilizzato tradizionalmente nella cerimonia del tè giapponese. Le foglie di tè vengono ombreggiate prima della raccolta per aumentare la produzione di clorofilla e quindi creare un tè dal colore verde intenso. Il Matcha viene poi macinato in polvere fine.<br><br><b>• Lung Ching:</b> Il Lung Ching, noto anche come Dragonwell, è un tè verde cinese famoso per la sua alta qualità. Viene coltivato nella regione di Hangzhou nella provincia cinese dello Zhejiang. Ha un sapore dolce, leggermente tostato e una nota di nocciola.<br><br><b>• Gyokuro:</b> Il Gyokuro è considerato uno dei tè verdi più pregiati del Giappone. Le foglie di tè vengono ombreggiate prima della raccolta per ridurre la fotosintesi e aumentare la produzione di clorofilla e aminoacidi.<br><br><b>• Darjeeling:</b> Il tè Darjeeling è prodotto nella regione montuosa di Darjeeling, nello stato indiano del Bengala Occidentale. È uno dei tè verdi più pregiati al mondo. Le foglie di tè vengono raccolte principalmente dalla pianta del tè Camellia sinensis var. sinensis, che è coltivata a quote elevate nelle colline dell'Himalaya. Ha un sapore delicato e floreale, con note che variano da erbe e frutta a toni muscati.  È spesso descritto come il "Champagne dei tè".</p>
+  </div>
+  </section>
+  <section class="sapore">
+    <div class="sapore_aromi">
+    <p>
+      <span class="sottotitolo">Sapore e aromi</span><br><br>
+      Il tè verde ha un sapore fresco, erbaceo e leggermente dolce. Si tratta di un tè molto delicato con un basso contenuto di caffeina.<br><br>Le sue caratteristiche organolettiche possono variare in base alla regione di coltivazione, alla varietà di foglie e al metodo di lavorazione.<br><br>Alcuni tè verdi possono presentare un sapore leggermente astringente o erbaceo più pronunciato, mentre altri possono avere un gusto più dolce o floreale.
+    </p>
+    <img src="img/6-tipi_di_tè/1-tè_verde/2-sapore_aroma.png">
+    </div>
+  </section>
+  <section class="benefici">
+    <div class="benefici_tè">
+    <img src="img/6-tipi_di_tè/1-tè_verde/3-benefici.png">
+    <p>
+      <span class="sottotitolo">Benefici del tè verde</span><br><br>
+      Il tè verde è ricco di benefici per la salute che sono stati anche dimostrati scientificamente.<br><br>Secondo diversi studi chi beve regolarmente tè verde hanno meno probabilità di contratte malattie cardiovascolari e tumori.<br><br>Il tè verde viene spesso utilizzato per perdere peso e in effetti diversi studi hanno dimostrato che un consumo regolare stimola il metabolismo.
+    </p>
+    </div>
+  </section>
+  <section class="usi">
+    <div class="usi_culinari">
+    <p>
+      <span class="sottotitolo">Usi culinari</span><br><br>
+      Oltre ad essere consumato come bevanda, il tè verde viene spesso utilizzato in cucina per aromatizzare o arricchire vari piatti. Può essere utilizzato nella preparazione di dessert, gelati, sorbetti, salse e zuppe.<br><br>Il tè verde matcha, in particolare, è noto per essere utilizzato in cerimonie del tè giapponesi e nella preparazione di dolci, bevande e gelati.
+    </p>
+    <img src="img/6-tipi_di_tè/1-tè_verde/4-usi_culinari.png">
+    </div> 
+  </section>
+ </main>
+</body>

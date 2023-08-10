@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style_tè.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    window.addEventListener('touchmove', function() {
+      scrollFunction();
+    });
+  </script>
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="active">Immergitea</a>
+    <a href="#">Lavorazione del tè</a>
+    <div class="dropdown">
+      <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Tè Nero</a>
+        <a href="#">Tè Verde</a>
+        <a href="#">Tè Giallo</a>
+        <a href="#">Tè Bianco</a>
+        <a href="#">Tè Oolong</a>
+        <a href="#">Tè Pst Fermentato</a>
+      </div>
+    </div>
+    <div class="dropdown">
+  <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Giappone</a>
+        <a href="#">Cina</a>
+        <a href="#">India</a>
+        <a href="#">Sri Lanka</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Hong Kong</a>
+        <a href="#">Darjeeling</a>
+        <a href="#">Longjing</a>
+        <a href="#">Uji</a>
+        <a href="#">Londra</a>
+        <a href="#">Torino</a>
+      </div>
+    </div>
+    <a href="#">Contatti</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+ <main>
+  <section class="intestazione">
+    <h1>Tè bianco</h1>
+    <p>Il tè bianco è considerato uno dei tè più pregiati al mondo. Si differenzia per il suo processo di lavorazione e per le foglie giovani che vengono utilizzate.</p>
+    <img src="img/6-tipi_di_tè/4-tè_bianco/1-intestazione.png">
+  </section>
+  <h3>Esempi di tè bianco</h3>
+  <section class="esempi_tè">
+    <div class="lista">
+    <p><b>• Silver Needle:</b> Il Silver Needle è uno dei più pregiati. È prodotto nella provincia del Fujian, in Cina, ed è costituito esclusivamente dai giovani boccioli argentati non ancora aperti della pianta del tè. Ha un sapore delicato e floreale, con note di miele.<br><br>
+       <b>• White Peony:</b> Il White Peony, anche noto come Bai Mu Dan, è un altro tè bianco rinomato. È realizzato con un mix di giovani boccioli argentati e le foglie più grandi della pianta del tè. Ha un gusto dolce e fruttato, con note floreali.<br><br>
+       <b>• Long Life Eyebrow:</b> Il Long Life Eyebrow, conosciuto anche come Shou Mei, è un tè bianco prodotto principalmente nella provincia del Fujian, in Cina. È composto da foglie più grandi e mature, offrendo un sapore più robusto e un carattere terroso. Ha un gusto dolce con note di erbe e una tinta dorata.<br><br>
+       <b>• Darjeeling White:</b> Anche la regione di Darjeeling, in India, produce tè bianco. Il Darjeeling White è un tè bianco di alta qualità che incorpora il caratteristico terroir e la delicatezza dei tè della regione. Ha un sapore floreale e leggero, con note di frutta e un'armoniosa dolcezza. È una scelta popolare per gli amanti del tè bianco che cercano varietà alternative.
+    </p>
+  </div>
+  </section>
+  <section class="sapore">
+    <div class="sapore_aromi">
+    <p>
+      <span class="sottotitolo">Sapore e aromi</span><br><br>
+      Il tè bianco ha un sapore leggero, fresco e morbido, con note floreali e fruttate.<br><br>
+      Il suo profilo di gusto può variare a seconda della varietà e delle condizioni di crescita.<br><br>
+      Spesso presenta un carattere dolce e una delicatezza che ricorda il miele o il leggero sapore di erba. L'aroma è sottile e piacevole, con sentori floreali e vegetali.
+    </p>
+    <img src="img/6-tipi_di_tè/4-tè_bianco/2-sapore_aroma.png">
+    </div>
+  </section>
+  <section class="benefici">
+    <div class="benefici_tè">
+    <img src="img/6-tipi_di_tè/4-tè_bianco/3-benefici.png">
+    <p>
+      <span class="sottotitolo">Benefici del tè bianco</span><br><br>
+      Il tè bianco è noto per i suoi benefici per la salute grazie alla presenza di antiossidanti, polifenoli e catechine.<br><br>
+      Questi composti possono contribuire a proteggere le cellule dai danni dei radicali liberi.<br><br>
+      Alcuni studi ritengono che abbia proprietà antinfiammatorie, antivirali e antitumorali.
+    </p>
+    </div>
+  </section>
+  <section class="usi">
+    <div class="usi_culinari">
+    <p>
+      <span class="sottotitolo">Usi culinari</span><br><br>
+      Il tè bianco è delicato, apprezzato per il suo sapore raffinato e i suoi presunti benefici per la salute. È una scelta popolare per coloro che cercano un tè leggero e aromatico.<br><br>
+      Tuttavia è bene non abusarne poiché potrebbe recare disturbi al sistema nervoso centrale.
+    </p>
+    <img src="img/6-tipi_di_tè/4-tè_bianco/4-usi_culinari.png">
+    </div> 
+  </section>
+ </main>
+</body>

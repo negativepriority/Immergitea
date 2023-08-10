@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style_tè.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    window.addEventListener('touchmove', function() {
+      scrollFunction();
+    });
+  </script>
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="active">Immergitea</a>
+    <a href="#">Lavorazione del tè</a>
+    <div class="dropdown">
+      <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Tè Nero</a>
+        <a href="#">Tè Verde</a>
+        <a href="#">Tè Giallo</a>
+        <a href="#">Tè Bianco</a>
+        <a href="#">Tè Oolong</a>
+        <a href="#">Tè Pst Fermentato</a>
+      </div>
+    </div>
+    <div class="dropdown">
+  <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Giappone</a>
+        <a href="#">Cina</a>
+        <a href="#">India</a>
+        <a href="#">Sri Lanka</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Hong Kong</a>
+        <a href="#">Darjeeling</a>
+        <a href="#">Longjing</a>
+        <a href="#">Uji</a>
+        <a href="#">Londra</a>
+        <a href="#">Torino</a>
+      </div>
+    </div>
+    <a href="#">Contatti</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+ <main>
+  <section class="intestazione">
+    <h1>Tè Pu'er</h1>
+    <p>È uno dei tè meno conosciuti, la cui lavorazione prevede una fase di fermentazione a opera di batteri nonché una di invecchiamento.</p>
+    <img src="img/6-tipi_di_tè/6-tè_puer/1-intestazione.png">
+  </section>
+  <h3>Esempi di tè pu'er</h3>
+  <section class="esempi_tè">
+    <div class="lista">
+    <p><b>• Pu'er Sheng Yiwu:</b> Questo Pu'er sheng proviene dalla regione di Yiwu, famosa per i suoi tè di alta qualità. Ha un profilo di gusto complesso, con note floreali e fruttate, una dolcezza rinfrescante e una leggera astringenza.<br><br>
+       <b>• Pu'er Sheng Bulang</b> Questo Pu'er sheng proviene dalla regione di Bulang, che è conosciuta per produrre Pu'er dalle caratteristiche forti e terrose. Ha un sapore pronunciato con note di legno e un caratteristico retrogusto dolce.<br><br>
+       <b>• Pu'er Shou Menghai:</b> Il Pu'er shou della regione di Menghai è ampiamente apprezzato per il suo sapore morbido e ricco, con una nota terrosa e una dolcezza naturale. Ha un carattere distintivo e un retrogusto persistente. È spesso scelto come Pu'er maturo per l'uso quotidiano.<br><br>
+       <b>• Pu'er Shou Xiaguan:</b> Il Pu'er shou prodotto dalla fabbrica Xiaguan è conosciuto per la sua maturità precoce e il sapore deciso. Ha un gusto terroso con note di legno e un retrogusto dolce. Il Pu'er Xiaguan è spesso compresso in forme compatte, come i tuochas o i brick, per agevolare l'invecchiamento.
+    </p>
+  </div>
+  </section>
+  <section class="sapore">
+    <div class="sapore_aromi">
+    <p>
+      <span class="sottotitolo">Sapore e aromi</span><br><br>
+      Il tè pu'er ha un sapore complesso, che varia a seconda del tipo di pu'er e del periodo di fermentazione.<br><br>
+      Spesso viene descritto come terroso, terroso, legnoso e ricco di note di humus o di terra umida.<br><br>
+      Il sapore può essere intenso, con una certa astringenza e un caratteristico retrogusto dolce. Con l'invecchiamento, può sviluppare sfumature di sapore ancora più complesse e morbide.
+    </p>
+    <img src="img/6-tipi_di_tè/6-tè_puer/2-sapore_aroma.png">
+    </div>
+  </section>
+  <section class="benefici">
+    <div class="benefici_tè">
+    <img src="img/6-tipi_di_tè/6-tè_puer/3-benefici.png">
+    <p>
+      <span class="sottotitolo">Benefici del tè pu'er</span><br><br>
+      Questo tè stimola il sistema nervoso centrale, brucia grassi e controlla il colesterolo.<br><br>
+      Come altri tè, contiene antiossidanti che possono contribuire alla protezione delle cellule dai danni dei radicali liberi.<br><br>
+      Tradizionalmente, è stato anche utilizzato nella medicina cinese per favorire la perdita di peso e il controllo dei livelli di zucchero nel sangue.
+    </p>
+    </div>
+  </section>
+  <section class="usi">
+    <div class="usi_culinari">
+    <p>
+      <span class="sottotitolo">Usi culinari</span><br><br>
+      I tè pu'er sono particolarmente adatti ad essere bevuti in inverno, conferendo al corpo un'energia in grado di connetterlo con la terra, utile nei periodi freddi ed umidi.<br><br>
+      Il pu'er è una scelta intrigante per gli amanti del tè che desiderano esplorare tè diversi e unici.
+    </p>
+    <img src="img/6-tipi_di_tè/6-tè_puer/4-usi_culinari.png">
+    </div> 
+  </section>
+ </main>
+</body>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style_tè.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    window.addEventListener('touchmove', function() {
+      scrollFunction();
+    });
+  </script>
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="active">Immergitea</a>
+    <a href="#">Lavorazione del tè</a>
+    <div class="dropdown">
+      <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Tè Nero</a>
+        <a href="#">Tè Verde</a>
+        <a href="#">Tè Giallo</a>
+        <a href="#">Tè Bianco</a>
+        <a href="#">Tè Oolong</a>
+        <a href="#">Tè Pst Fermentato</a>
+      </div>
+    </div>
+    <div class="dropdown">
+  <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Giappone</a>
+        <a href="#">Cina</a>
+        <a href="#">India</a>
+        <a href="#">Sri Lanka</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Hong Kong</a>
+        <a href="#">Darjeeling</a>
+        <a href="#">Longjing</a>
+        <a href="#">Uji</a>
+        <a href="#">Londra</a>
+        <a href="#">Torino</a>
+      </div>
+    </div>
+    <a href="#">Contatti</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+ <main>
+  <section class="intestazione">
+    <h1>Tè nero</h1>
+    <p>Il tè nero deriva da un processo di lavorazione differente delle foglie di Camellia Sinesis. Il tè nero è la varietà che contiene la più alta percentuale di caffeina. </p>
+    <img src="img/6-tipi_di_tè/2-tè_nero/1-intestazione.png">
+  </section>
+  <h3>Esempi di tè nero</h3>
+  <section class="esempi_tè">
+    <div class="lista">
+    <p><b>• Earl Grey:</b> L'Earl Grey è una miscela di tè nero aromatizzato con l'olio essenziale estratto dalla buccia dell'agrume chiamato bergamotto. Questa combinazione conferisce al tè un aroma fresco e floreale, che lo rende una scelta molto popolare.<br><br>
+       <b>• English Breakfast:</b> L'English Breakfast è una miscela tradizionale di tè nero, spesso derivante da diverse varietà come Assam, Ceylon e Kenia. È un tè robusto, dal sapore pieno e ricco, spesso consumato con latte e zucchero per una colazione energizzante.<br><br>
+       <b>• Lapsang Souchong:</b> Il Lapsang Souchong è un tè nero originario della provincia cinese del Fujian. Ciò che lo rende particolare è il processo di essiccazione delle foglie, che avviene su fuochi di legno di pino, conferendo al tè un aroma affumicato distintivo. È un tè dal sapore robusto e apprezzato da chi ama i sapori intensi.<br><br>
+       <b>• Ceylon Tea:</b> Il tè di Ceylon, o tè di Sri Lanka, è un tipo di tè nero prodotto sull'isola di Sri Lanka. È conosciuto per la sua qualità e il suo sapore eccezionale. I tè di Ceylon variano da tè leggeri e delicati a tè più forti e corposi. Hanno un sapore vivace, una tinta rame brillante e un aroma fragrante. I tè di Ceylon sono versatili e possono essere gustati da soli o con latte e zucchero, a seconda delle preferenze personali.
+    </p>
+  </div>
+  </section>
+  <section class="sapore">
+    <div class="sapore_aromi">
+    <p>
+      <span class="sottotitolo">Sapore e aromi</span><br><br>
+      Il tè nero ha un sapore complesso e ricco, con note che possono variare dal maltato al fruttato, dal leggermente dolce all'amaro.<br><br>
+      Il sapore può anche essere influenzato dal terreno in cui viene coltivato il tè, dal clima, dalla lavorazione e dal tempo di infusione.<br><br>
+      Spesso viene descritto come robusto e corposo. È comune aggiungere latte o zucchero al tè nero, soprattutto in alcune preparazioni come il tè nero inglese.
+    </p>
+    <img src="img/6-tipi_di_tè/2-tè_nero/2-sapore_aromi.png">
+    </div>
+  </section>
+  <section class="benefici">
+    <div class="benefici_tè">
+    <img src="img/6-tipi_di_tè/2-tè_nero/3-benefici.png">
+    <p>
+      <span class="sottotitolo">Benefici del tè verde</span><br><br>
+      Il tè nero è ricco di antiossidanti di conseguenza previene l'invecchiamento delle cellule.<br><br>
+      Aiuta a mantenere in salute il sistema cardiovascolare ed è un rimedio contro la diarrea se accompagnato dal limone.<br><br>
+      E' un potente stimolante per la mente e si dice abbia anche proprietà antitumorali.
+    </p>
+    </div>
+  </section>
+  <section class="usi">
+    <div class="usi_culinari">
+    <p>
+      <span class="sottotitolo">Usi culinari</span><br><br>
+      Il tè nero viene spesso consumato semplicemente come bevanda calda o fredda, ma può anche essere utilizzato come base per diverse miscele di tè, come l'Earl Grey, il tè chai e l'English Breakfast.<br><br>
+      Il tè nero può anche essere utilizzato nella preparazione di ricette culinarie, come dessert, gelati, salse e marinature.
+    </p>
+    <img src="img/6-tipi_di_tè/2-tè_nero/4-usi_culinari.png">
+    </div> 
+  </section>
+ </main>
+</body>

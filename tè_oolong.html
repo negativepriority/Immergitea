@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style_tè.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    window.addEventListener('touchmove', function() {
+      scrollFunction();
+    });
+  </script>
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="active">Immergitea</a>
+    <a href="#">Lavorazione del tè</a>
+    <div class="dropdown">
+      <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Tè Nero</a>
+        <a href="#">Tè Verde</a>
+        <a href="#">Tè Giallo</a>
+        <a href="#">Tè Bianco</a>
+        <a href="#">Tè Oolong</a>
+        <a href="#">Tè Pst Fermentato</a>
+      </div>
+    </div>
+    <div class="dropdown">
+  <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Giappone</a>
+        <a href="#">Cina</a>
+        <a href="#">India</a>
+        <a href="#">Sri Lanka</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Hong Kong</a>
+        <a href="#">Darjeeling</a>
+        <a href="#">Longjing</a>
+        <a href="#">Uji</a>
+        <a href="#">Londra</a>
+        <a href="#">Torino</a>
+      </div>
+    </div>
+    <a href="#">Contatti</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+ <main>
+  <section class="intestazione">
+    <h1>Tè oolong</h1>
+    <p>Il tè oolong è una varietà a metà tra il tè verde e il tè nero. In base al tipo di fermentazione il colorito delle foglie varia dal verde al rosso/bruno.</p>
+    <img src="img/6-tipi_di_tè/5-tè_oolong/1-intestazione.png">
+  </section>
+  <h3>Esempi di tè oolong</h3>
+  <section class="esempi_tè">
+    <div class="lista">
+    <p><b>• Tie Guan Yin:</b> Il Tie Guan Yin è uno dei tè oolong più celebri provenienti dalla Cina. Viene coltivato principalmente nella provincia del Fujian. Ha un sapore complesso e floreale, con note di orchidea e un caratteristico retrogusto dolce.<br><br>
+       <b>• Dong Ding:</b> Il Dong Ding è un tè oolong proveniente da Taiwan. È conosciuto per il suo sapore rotondo e cremoso, con note di caramello, frutta e un leggero tocco di torrefazione. Viene spesso apprezzato per la sua delicatezza e la sua ricchezza di gusto.<br><br>
+       <b>• Da Hong Pao:</b> Il Da Hong Pao è un rinomato tè oolong cinese proveniente dalla regione di Wuyi Shan. Ha un gusto robusto e corposo, con note di miele, legno e un leggero sentore di minerali. È spesso considerato un tè di alta qualità e viene apprezzato dai collezionisti e dagli amanti del tè in tutto il mondo.<br><br>
+       <b>• Ali Shan:</b> L'Ali Shan è un tè oolong proveniente dalle montagne dell'omonima regione di Taiwan. È caratterizzato da un sapore morbido e floreale, con note di orchidea e frutta. Il tè Ali Shan viene coltivato ad alta quota, il che contribuisce alla formazione delle sue caratteristiche uniche di gusto e aroma.
+    </p>
+  </div>
+  </section>
+  <section class="sapore">
+    <div class="sapore_aromi">
+    <p>
+      <span class="sottotitolo">Sapore e aromi</span><br><br>
+      Il tè oolong offre una vasta gamma di profili di sapore, che variano dal liscio e delicato al complesso e robusto.<br><br>
+      I tè oolong possono avere note floreali, fruttate, tostate o legnose, con sfumature di miele, caramello o castagna.<br><br>
+      L'aroma può essere fresco, burroso o profumato, a seconda del tipo di tè e delle sue caratteristiche di lavorazione. Ottimo per chi esplora vari livelli di ossidazione.
+    </p>
+    <img src="img/6-tipi_di_tè/5-tè_oolong/2-sapore_aroma.png">
+    </div>
+  </section>
+  <section class="benefici">
+    <div class="benefici_tè">
+    <img src="img/6-tipi_di_tè/5-tè_oolong/3-benefici.png">
+    <p>
+      <span class="sottotitolo">Benefici del tè oolong</span><br><br>
+      Il tè oolong è antiossidante, stimolante, ottimo da associare a una dieta dimagrante e per rinforzare il sistema immunitario.<br><br>
+      Offre il sostegno alla digestione, la promozione della salute cardiaca, il controllo del peso e il miglioramento delle funzioni cognitive.<br><br>
+      Tuttavia, la ricerca specifica sui benefici per la salute del tè oolong è ancora in corso.
+    </p>
+    </div>
+  </section>
+  <section class="usi">
+    <div class="usi_culinari">
+    <p>
+      <span class="sottotitolo">Usi culinari</span><br><br>
+      Esistono diversi livelli di ossidazione nel tè oolong, che vanno dal leggero al medio e al pieno. Questa gamma di ossidazione consente ai bevitori di tè di trovare il profilo di gusto che meglio si adatta alle loro preferenze.<br><br>
+      Il contenuto di caffeina nel tè oolong può variare, ma in generale contiene meno caffeina rispetto al tè nero e al caffè. 
+    </p>
+    <img src="img/6-tipi_di_tè/5-tè_oolong/4-usi_culinari.png">
+    </div> 
+  </section>
+ </main>
+</body>
