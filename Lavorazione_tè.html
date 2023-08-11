@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/lavorazionedeltè.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+  
+    window.onscroll = function() {scrollFunction()};
+  
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+  
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  
+    // Aggiungi un event listener per l'evento 'touchmove' sui dispositivi mobili
+    window.addEventListener('touchmove', function() {
+      scrollFunction();
+    });
+  </script>
+
+<header>
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="active">Immergitea</a>
+    <a href="#">Lavorazione del tè</a>
+    <div class="dropdown">
+      <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Tè Nero</a>
+        <a href="#">Tè Verde</a>
+        <a href="#">Tè Giallo</a>
+        <a href="#">Tè Bianco</a>
+        <a href="#">Tè Oolong</a>
+        <a href="#">Tè Pst Fermentato</a>
+      </div>
+    </div>
+    <div class="dropdown">
+  <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Giappone</a>
+        <a href="#">Cina</a>
+        <a href="#">India</a>
+        <a href="#">Sri Lanka</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Hong Kong</a>
+        <a href="#">Darjeeling</a>
+        <a href="#">Longjing</a>
+        <a href="#">Uji</a>
+        <a href="#">Londra</a>
+        <a href="#">Torino</a>
+      </div>
+    </div>
+    <a href="#">Contatti</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+</header>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+  <main>
+    <section class="titolo">
+      <div class="lavorazione">
+      <h1> Lavorazione del tè</h1>
+      <p>La lavorazione del tè è un lungo e affascinante processo che richiede una combinazione di abilità artigianale, conoscenza e attenzione ai dettagli. Questo affascinante viaggio inizia con la coltivazione delle piante di tè e si snoda attraverso <strong>sette fasi</strong> ben definite:</p>
+    </div>
+    </section>
+
+    <section class="intestazione">
+          <div class="testo">
+            <p class="square">1</p>
+            <h2>La raccolta</h2></div>
+    </section>
+
+    <section class="paragraforaccolta"> 
+      <div class="cardraccolta">
+        <p>La tipologia di raccolta influenza fortemente la qualità del tè. Inoltre i tè più pregiati sono raccolti a mano e i raccoglitori sono molto attenti a non danneggiare lo stelo. La raccolta si differenzia anche per il periodo in cui avviene e può essere ripetuta più volte durante l’anno. <br> <br>Il primo raccolto avviene generalmente intorno a marzo/aprile e solitamente genera la qualità di tè più elevata, in quanto le foglie e i germogli sono più ricchi di nutrienti. Dopo il raccolto l'operatore deve portare le foglie di tè all'impianto di lavorazione nel più breve tempo possibile per evitare l'inizio del processo di deterioramento.</p>
+      </div>
+      <div class="immaginera" >
+        
+      <img src="img/5-lavorazione_del_tè/1-raccolta.png" alt="">
+    </div>
+        </section>
+
+
+
+        <section class="intestazione">
+          <div class="testo">
+            <p class="square">2</p>
+            <h2>L'appassimento</h2></div>
+    </section>
+
+    <section class="paragraforaccolta"> 
+      <div class="cardraccolta">
+        <p>L'appassimento è il processo a cui vengono sottoposte le foglie di tè subito dopo la raccolta ed è fondamentale per la lavorazione successiva. Serve a ridurre la quantità di acqua presente nelle foglie. <br> <br> L’appassimento può avvenire all’aria aperta, per esempio su cestoni di bamboo, oppure può essere eseguito in condizioni di temperatura, umidità e flusso d’aria controllati, fino a raggiungere il livello di perdita d’acqua desiderata. L’obiettivo fisico dell’appassimento è quello di rendere la foglia morbida e flessibile, mentre l’obiettivo chimico è quello di permettere lo sviluppo di particolari aromi e sapori.</p>
+      </div>
+      <div class="immaginera" >
+        <img src="img/5-lavorazione_del_tè/2-appassimento.png" alt="">
+      </div>
+      </section>
+
+        <section class="intestazione">
+          <div class="testo">
+            <p class="square">3</p>
+            <h2>La rullatura</h2></div>
+    </section>
+
+    <section class="paragraforaccolta"> 
+      <div class="cardraccolta">
+        <p>La rullatura consente la rottura delle cellule vegetali delle foglie per attivare processi chimici che influenzano la resa finale del tè. È da questa fase in poi che si delinea la tipologia di tè che si intende ottenere. <br><br>I tè neri e gli oolong vengono arrotolati in modo da rompere le pareti delle foglie: ciò consente all’ossigeno di poter penetrare e di attivare l’ossidazione. Questo passaggio è diverso se l'intenzione è quella di generare tè verdi: qui l'arrotolamento ha come unico scopo quello di dare una determinata forma alle foglie.</p>
+      </div>
+      <div class="immaginera" >
+        <img src="img/5-lavorazione_del_tè/3-rullatura.png" alt="">
+      </div>
+      </section>
+
+
+        <section class="intestazione">
+          <div class="testo">
+            <p class="square">4</p>
+            <h2>L'ossidazione</h2></div>
+    </section>
+
+    <section class="paragraforaccolta"> 
+      <div class="cardraccolta">
+        <p>L'ossidazione è una reazione chimica fondamentale nel processo di lavorazione del tè che si verifica al contatto delle foglie con l'ossigeno dell'aria. Questo passaggio cruciale gioca un ruolo determinante nel definire il carattere e le qualità organolettiche del tè. <br><br> Una volta raccolte, le foglie di tè sono fresche e verdi, ma quando sono esposte all'ossigeno, iniziano a subire un processo di ossidazione. Il colore verde brillante delle foglie inizierà gradualmente a trasformarsi in un tono marrone, e sarà proprio questo cambiamento cromatico a segnalare l'inizio dell'ossidazione.</p>
+      </div>
+      <div class="immaginera" >
+        <img src="img/5-lavorazione_del_tè/4-ossidazione.png" alt="">
+      </div>
+      </section>
+
+        <section class="intestazione">
+          <div class="testo">
+            <p class="square">5</p>
+            <h2>La fermentazione</h2></div>
+    </section>
+
+    <section class="paragraforaccolta"> 
+      <div class="cardraccolta">
+        <p>La fermentazione è una fase distintiva nel processo di lavorazione del tè ed è importante sottolineare che è completamente diversa dall'ossidazione. A differenza di quest'ultima, la fermentazione è una reazione biologica che coinvolge popolazioni batteriche specifiche che agiscono in un ambiente anaerobico, umido, caldo e privo di luce. <br><br>Questa fase cruciale si verifica solo in alcuni tipi di tè, in particolare nei tè parzialmente ossidati, come i tè oolong. Mentre alcuni tè, come i tè bianchi e verdi, non subiscono alcuna fermentazione, i tè oolong sono sottoposti a un grado controllato di ossidazione prima di passare alla fase di fermentazione.</p>
+      </div>
+      <div class="immaginera" >
+        <img src="img/5-lavorazione_del_tè/5-fermentazione.png" alt="">
+      </div>
+      </section>
+
+
+        <section class="intestazione">
+          <div class="testo">
+            <p class="square">6</p>
+            <h2>L'essiccazione</h2></div>
+    </section>
+
+    <section class="paragraforaccolta"> 
+      <div class="cardraccolta">
+        <p>L'essiccazione rappresenta un passaggio cruciale nella fase finale del processo di lavorazione del tè, il cui scopo principale è ridurre al minimo la quantità di acqua all'interno delle foglie, portandola a un livello compreso tra il 2% e il 3%. <br><br>Questo delicato procedimento riveste una grande importanza poiché permette di preservare la qualità e le caratteristiche organolettiche del tè, garantendo una bevanda piacevole al palato. Una volta completate le fasi precedenti, come l'ossidazione e la fermentazione, le foglie di tè contengono ancora una quantità significativa di umidità, il che rende necessario sottoporle a un'essiccazione accurata.</p>
+      </div>
+      <div class="immaginera" >
+        <img src="img/5-lavorazione_del_tè/6-essicazione.png" alt="">
+      </div>
+      </section>
+
+        <section class="intestazione">
+          <div class="testo">
+            <p class="square">7</p>
+            <h2>La selezione</h2></div>
+    </section>
+
+    <section class="paragraforaccolta"> 
+      <div class="cardraccolta">
+        <p>Il selezionamento finale delle foglie di tè rappresenta un'importante fase nel processo di lavorazione, che ha lo scopo di garantire una consistenza uniforme e una qualità costante del tè. Questo passaggio può avvenire in diverse modalità, sia attraverso il selezionamento manuale da parte di esperti tè master, sia mediante l'utilizzo di grandi setacci meccanici, a seconda della scala produttiva e della tipologia di tè prodotto. <br><br>Nel caso del selezionamento manuale, le foglie di tè vengono attentamente esaminate da maestri tè esperti. Questi esperti hanno un occhio affinato e una profonda conoscenza delle varie varietà di tè e del loro profilo di gusto.</p>
+      </div>
+      <div class="immaginera" >
+        <img src="img/5-lavorazione_del_tè/6-selezione.png" alt="">
+      </div>
+      </section>
+
+  </main>
+
