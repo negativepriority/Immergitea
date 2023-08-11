@@ -330,7 +330,7 @@ p.square{
 
 }
 .cardraccolta p{
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .immaginera img{
@@ -385,7 +385,7 @@ p.square{
 
 }
 .cardraccolta p{
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .immaginera img{
@@ -438,7 +438,7 @@ p.square{
 
 }
 .cardraccolta p{
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .immaginera img{
@@ -499,7 +499,7 @@ align-items: center;
 
 }
 div.cardraccolta p{
-  font-size: 13px;
+  font-size: 15px;
   width: auto;
 }
 
@@ -529,7 +529,7 @@ div.cardraccolta p{
   display: grid;
   grid-column: 1;
   grid-template-columns: 350px;
-  font-size: 12px;
+  font-size: 15px;
   
 }
 div.lavorazione h1{
@@ -544,7 +544,7 @@ grid-template-rows: 200px ;
 
 
  div.lavorazione p{
-  font-size: 12px;
+  font-size: 15px;
  }
 
 
@@ -558,7 +558,8 @@ grid-template-rows: 200px ;
   display: grid;
   grid-column: 1;
   grid-template-columns: 300px;
-  font-size: 12px;
+  font-size: 14px;
+ 
   
 }
 div.lavorazione h1{
@@ -575,6 +576,8 @@ grid-template-rows: 200px ;
  div.lavorazione p{
   font-size: 12px;
  }
+ 
+
 
 }
 
@@ -584,7 +587,8 @@ grid-template-rows: 200px ;
   display: grid;
   grid-column: 1;
   grid-template-columns: 220px;
-  font-size: 10px;
+  font-size: 14px;
+  background-color: aqua;
   
 }
 div.lavorazione h1{
@@ -598,7 +602,8 @@ grid-template-rows: 150px ;
 }
 
  div.lavorazione p{
-  font-size: 10px;
+  font-size: 13px;
+
  }
 
 }
@@ -609,7 +614,7 @@ grid-template-rows: 150px ;
   display: grid;
   grid-column: 1;
   grid-template-columns: 200px;
-  font-size: 8px;
+  font-size: 13px;
   
 }
 div.lavorazione h1{
