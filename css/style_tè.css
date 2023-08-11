@@ -462,6 +462,9 @@ div.usi_culinari p{
     section.intestazione img{
         width: 81%;
     }
+    div.lista{
+        height:650px;
+    }
     div.lista p{
         padding:40px 0 0 0;
         font-size: 15px;
