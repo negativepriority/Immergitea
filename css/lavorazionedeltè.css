@@ -174,7 +174,7 @@
    
    
 }
-    .intestazione{
+    .intestazione-lavorazione-tè{
   
         margin: 0px;
         padding-left: 50px;
@@ -184,7 +184,7 @@
     
     
  
-    div.testo {
+    div.testo-lavorazione-tè {
         display: flex;
         
         grid-column: 2 ;
@@ -233,7 +233,7 @@
 
 
 
-div.testo h2{
+div.testo-lavorazione-tè h2{
     font-size: 30px;
     font-weight: bold;
     padding-left: 20px;
@@ -309,7 +309,7 @@ grid-template-rows: 300px ;
     font-size: 17px;
    }
    
-   div.testo h2{
+   div.testo-lavorazione-tè h2{
     font-size: 30px;
 
 }
@@ -324,7 +324,7 @@ p.square{
 .cardraccolta p{
   font-size: 17px;
 }
-.intestazione{
+.intestazione-lavorazione-tè{
   padding-left: 40px;
 }
 .paragraforaccolta{
@@ -356,7 +356,7 @@ grid-template-rows: 300px ;
     font-size: 17px;
    }
    
-   div.testo h2{
+   div.testo-lavorazione-tè h2{
     font-size: 28px;
 
 }
@@ -368,7 +368,7 @@ grid-template-rows: 300px ;
 p.square{
   font-size: 16px;
 }
-.intestazione{
+.intestazione-lavorazione-tè{
   padding-left: 40px;
 }
 .paragraforaccolta{
@@ -410,7 +410,7 @@ grid-template-rows: 300px ;
     font-size: 17px;
    }
    
-   div.testo h2{
+   div.testo-lavorazione-tè h2{
     font-size: 26px;
 
 }
@@ -422,7 +422,7 @@ grid-template-rows: 300px ;
 p.square{
   font-size: 16px;
 }
-.intestazione{
+.intestazione-lavorazione-tè{
   padding-left: 40px;
 }
 .paragraforaccolta{
@@ -465,11 +465,11 @@ grid-template-rows: 300px ;
     font-size: 16px;
    }
    
-  div.testo h2{
+  div.testo-lavorazione-tè h2{
     font-size: 24px;
 
 }
-.intestazione{
+.intestazione-lavorazione-tè{
   padding-left: 40px;
 }
 .square {
@@ -504,10 +504,11 @@ p.square{
   .footer h3{
     font-size: 12px;
   }
- .intestazione{
+ .intestazione-lavorazione-tè{
   display: flex;
   justify-content: center;
   padding-right: 30px;
+  padding-left: 40px;
  }
 
   div.lavorazione h1{
@@ -524,13 +525,11 @@ grid-template-rows: 200px ;
     font-size: 15px;
    }
    
-   div.testo h2{
+   div.testo-lavorazione-tè h2{
     font-size: 22px;
 
 }
-.intestazione{
-  padding-left: 40px;
-}
+
 .square {
   width: 36px;
   height: 36px;
@@ -696,7 +695,7 @@ grid-template-rows: 150px ;
 p.square{
   font-size: 12px;
 }
-div.testo h2{
+div.testo-lavorazione-tè h2{
   font-size: 20px;
 
 }
