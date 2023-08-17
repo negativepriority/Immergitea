@@ -116,49 +116,6 @@ body {margin:0;font-family:nunito}
       text-align: left;
     }
 }
-.grid, .card {
-    max-width: 1200px;
-    margin: auto; 
-    padding: 10px;
-  }
-.card {
-    max-width: 300px;
-}
-.grid {
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 100px;
-    background-color: brown;
-}
-.grid{
-    color:#283618;
-    font-weight: normal;
-}
-.grid h3 {
-    padding: 0%;
-    margin: 5% 0 0 0;
-    font-size: 24px;
-    font-family:"nunito";
-    font-weight: bold;
-    line-height: 155%;
-    letter-spacing: -0.5px;
-    text-align: center;
-    background-color: rgb(255, 72, 0);
-}
-.grid :hover {
-    color:#85D32C;
-}
-.card img {
-    max-width: 100%;
-    position: relative;
-    background-color: aqua;
-}
-.titolo{
-  font-size: 50px;
-  background-color: #85D32C;
-  color: #F5FBFB;
-}
 body{
     background-color: rgba(240, 240, 234, 1);
 }
@@ -189,7 +146,7 @@ section.esempi_tè{
     grid-template-columns: auto 950px auto;
     grid-template-rows: 800px;
 }
-main h3{
+section.esempi h3{
     font-size: 28px;
     text-align:center;
     padding: 150px 0 0 0;
@@ -284,7 +241,7 @@ div.usi_culinari p{
         padding:0 0 100px 0;
         margin:0 250px 0 250px;
     }
-    main h3{
+    section.esempi h3{
         font-size: 28px;
     }
     section.esempi_tè{
@@ -339,7 +296,7 @@ div.usi_culinari p{
         padding:0 0 50px 0;
         margin:0 250px 0 250px;
     }
-    main h3{
+    section.esempi h3{
         font-size: 24px;
         padding: 60px 0 0 0;
     }
@@ -552,7 +509,7 @@ div.usi_culinari p{
         font-size: 28px;
         text-align:center;
     }
-    main h3{
+    section.esempi h3{
         font-size: 22px;
         padding: 60px 0 0 0;
     }
