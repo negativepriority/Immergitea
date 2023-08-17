@@ -568,15 +568,14 @@ div.usi_culinari p{
 @media(max-width:450px){
     div.lista p{
         padding:40px 0 0 0;
-        font-size: 13px;
         width:300px;
     }
     div.lista{
-        height:630px;
+        height:680px;
     }
     section.esempi_tè{
         grid-template-columns: auto 360px auto;
-        grid-template-rows: 710px;
+        grid-template-rows: 750px;
     }
     section.sapore{
         grid-template-columns: auto 412px auto ;
@@ -587,7 +586,6 @@ div.usi_culinari p{
         padding:65px 45px 65px 45px;
     }
     div.sapore_aromi p{
-        font-size: 13px;
         padding: 0 25px 0 25px;
     }
     section.benefici{
@@ -599,7 +597,6 @@ div.usi_culinari p{
         padding:65px 45px 65px 45px;
     }
     div.benefici_tè p{
-        font-size: 13px;
         padding: 0 25px 0 25px;
     }
     section.usi{
@@ -611,22 +608,19 @@ div.usi_culinari p{
         padding:65px 45px 65px 45px;
     }
     div.usi_culinari p{
-        font-size: 13px;
         padding: 0 25px 0 25px;
     }
 }
 @media(max-width:412px){
     section.intestazione p {
-        font-size: 13px;
         padding:0 0 50px 0;
         margin:0 30px 0 45px;
     }
     div.lista{
-        height:630px;
+        height:680px;
     }
     div.lista p{
         padding:40px 0 0 0;
-        font-size: 13px;
         width:300px;
     }
     section.esempi_tè{
@@ -642,7 +636,6 @@ div.usi_culinari p{
         padding:65px 46px 65px 40px;
     }
     div.sapore_aromi p{
-        font-size: 13px;
         padding:0px;
     }
     section.benefici{
@@ -654,7 +647,6 @@ div.usi_culinari p{
         padding:65px 46px 65px 40px;
     }
     div.benefici_tè p{
-        font-size: 13px;
         padding: 0px;
     }
     section.usi{
@@ -666,7 +658,6 @@ div.usi_culinari p{
         padding:65px 56px 65px 40px;
     }
     div.usi_culinari p{
-        font-size: 13px;
         padding: 0px;
     }
 }
