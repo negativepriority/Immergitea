@@ -1,0 +1,149 @@
+@import url(font.css);
+
+.grid-archivio, .card-archivio {
+    max-width: 1200px;
+    margin: auto; /* centro l'elemento nella pagina */
+    padding: 10px;
+    }
+
+    .card-archivio {
+      max-width: 300px;
+    }
+    
+    .grid-archivio {
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap: 100px; 
+    }
+    
+    .paragrafo-card-archivio{
+    color:#000000;
+    font-family:"nunito";
+    font-weight: normal;
+    line-height: 140%;
+    font-size: 17px;
+    text-align: left;
+
+    }
+    
+
+    .p-grassetto-card-archivio {
+      font-weight: bold;
+
+    }
+
+    .p-grassetto-viola-card-archivio {
+        font-weight: bold;
+        color:#493548;
+        text-decoration: none;
+    }
+
+    .grid-archivio h3 {
+    color:#415D43;
+    padding: 0%;
+    margin: 0 0 5% 0;
+    font-size: 24px;
+    font-family:"nunito";
+    font-weight: bold;
+    line-height: 155%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    
+    }
+
+   .card-archivio img {
+      max-width: 100%;
+      position: relative;
+    }
+
+
+    @media (max-width: 1000px) {       
+    
+    .card-archivio {
+      max-width: 250px;
+      padding: 30px;
+    }
+    
+    .grid-archivio {
+    margin: 70px auto;
+    }
+    
+    .grid-archivio h3 {
+
+    font-size: 22px;
+    line-height: 155%;
+    letter-spacing: -0.5px;  
+    }
+  }
+
+    @media (max-width: 800px) {
+      
+     
+     
+      .paragrafo-card-archivio{
+
+        line-height: 140%;
+        font-size: 16px;
+        text-align: left;
+    
+        }
+
+    }
+
+
+    @media (max-width: 700px) {
+      
+      .card-archivio {
+        max-width: 240px;
+        padding: 30px;
+      }
+      
+      .grid-archivio {
+      margin: 70px auto; 
+      }
+
+      .paragrafo-card-archivio{
+        line-height: 140%;
+        font-size: 15px;
+        text-align: left;
+        }
+
+    }
+
+    @media (max-width: 610px){
+
+       .card-archivio {
+        max-width: 210px;
+        padding: 28px;
+      }
+      
+      .grid-archivio {
+      margin: 70px auto;
+      } 
+    }
+
+
+    @media (max-width: 500px) {
+      
+      .paragrafo-card-archivio{
+        line-height: 140%;
+        font-size: 14px;
+        text-align: left;
+    
+        }
+
+    }
+
+    
+    @media (max-width: 360px) {
+      
+      .paragrafo-card-archivio{
+        line-height: 140%;
+        font-size: 13px;
+        text-align: left;
+    
+        }
+
+    }
