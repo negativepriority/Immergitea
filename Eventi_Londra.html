@@ -10,85 +10,85 @@
 
 </head>
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Torna sù</button>
+  <script>
+    let mybutton = document.getElementById("myBtn");
   
-    <script>
-      let mybutton = document.getElementById("myBtn");
-    
-      window.onscroll = function() {scrollFunction()};
-    
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-    
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    
-      // Aggiungi un event listener per l'evento 'touchmove' sui dispositivi mobili
-      window.addEventListener('touchmove', function() {
-        scrollFunction();
-      });
-    </script>
+    window.onscroll = function() {scrollFunction()};
   
-  
-    <div class="topnav" id="myTopnav">
-      <a href="#" class="active">Immergitea</a>
-      <a href="#">Lavorazione del tè</a>
-      <div class="dropdown">
-        <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Tè Nero</a>
-          <a href="#">Tè Verde</a>
-          <a href="#">Tè Giallo</a>
-          <a href="#">Tè Bianco</a>
-          <a href="#">Tè Oolong</a>
-          <a href="#">Tè Pst Fermentato</a>
-        </div>
-      </div>
-      <div class="dropdown">
-    <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Giappone</a>
-          <a href="#">Cina</a>
-          <a href="#">India</a>
-          <a href="#">Sri Lanka</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Hong Kong</a>
-          <a href="#">Darjeeling</a>
-          <a href="#">Longjing</a>
-          <a href="#">Uji</a>
-          <a href="#">Londra</a>
-          <a href="#">Torino</a>
-        </div>
-      </div>
-      <a href="#">Contatti</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-  
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
       } else {
-        x.className = "topnav";
+        mybutton.style.display = "none";
       }
     }
-    </script>
+  
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  
+    // Aggiungi un event listener per l'evento 'touchmove' sui dispositivi mobili
+    window.addEventListener('touchmove', function() {
+      scrollFunction();
+    });
+  </script>
+
+<header>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Immergitea</a>
+    <a href="lavorazionedeltè.html">Lavorazione del tè</a>
+    <div class="dropdown">
+      <button class="dropbtn">Tipi di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="tè_nero.html">Tè Nero</a>
+        <a href="tè_verde.html">Tè Verde</a>
+        <a href="tè_giallo.html">Tè Giallo</a>
+        <a href="tè_bianco.html">Tè Bianco</a>
+        <a href="tè_oolong.html">Tè Oolong</a>
+        <a href="tè_pst.html">Tè Pst Fermentato</a>
+      </div>
+    </div>
+    <div class="dropdown">
+  <button class="dropbtn">Produttori di tè <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Produttori_Giappone.html">Giappone</a>
+        <a href="Produttori_Cina.html">Cina</a>
+        <a href="Produttori_India.html">India</a>
+        <a href="Produttori_SriLanka.html">Sri Lanka</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Eventi <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Eventi_Hongkong.html">Hong Kong</a>
+        <a href="Eventi_Darjeeling.html">Darjeeling</a>
+        <a href="Eventi_Lonjing.html">Longjing</a>
+        <a href="Eventi_Uji.html">Uji</a>
+        <a href="Eventi_Londra.html">Londra</a>
+        <a href="Eventi_Torino.html">Torino</a>
+      </div>
+    </div>
+    <a href="Contatti.html">Contatti</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+</header>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
      <main>
         <section class="coper">
           <div class="cope">
@@ -128,6 +128,28 @@
 
 
        </main>
+       <footer>
+        <section class="footer"> 
+          <div class="lato1">
+            <h3>©2023 Immergertea</h3>
+          </div>
+          
+          <div class="centrofoo">
+          <h3><a href="#">Facebook</a></h3>
+          <h3><a href="#">Instagram</a></h3>
+          <h3><a href="#">Twitter</a></h3>
+          </div>
+        
+        
+        <div class="lato2">
+          <h3>All rights reserved</h3>
+        </div>
+          
+         
+        </section>
+      
+          </footer>
+
     </body>
     </html>
     
