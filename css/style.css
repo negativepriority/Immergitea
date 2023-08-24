@@ -242,107 +242,94 @@ FINE NAVBAR+RESPONSIVE NAVBAR
 
 /*INTESTAZIONI (TITOLETTO+PARAGRAFO)*/
 
+.intestazione-generale {
+  margin: 90px 0px 90px 0px;
 
-
-section.intestazione h1 {
-    margin-top: 90px;
-    font-size: 36px;
-    text-align:center;
-}
-section.intestazione p {
-
-    justify-content: center;
-    align-content: center;
-    font-size: 17px;
-    padding:0 0 100px 0;
-    margin: 0 270px 0 270px;
 }
 
-section.intestazione img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  max-width:100%;
+.intestazione-generale h1{
+  text-align: center;
+  color:#4B6A3E;
+  font-size: 36px;
+  font-weight: bold;
+  padding:0px 40px 0px 40px;
+  
 }
 
-@media(max-width:1264px){
-  section.intestazione p {
-    margin:0 180px 0 180px;
-  }
+.container-sx-centrale {
+  display: flex;
+  justify-content: center;
 }
+
+.intestazione-testo-centratosx {
+  text-align: left;
+  margin: 0 auto;
+  width: 60%;
+  font-size: 17px;  
+  font-weight: normal;
+  
+}
+
 
 @media(max-width:1000px){
-  section.intestazione p {
-      font-size: 17px;
-      padding:0 0 100px 0;
-      margin:0 100px 0 100px;
-  }
+
 }
 
 @media(max-width:960px){
-  section.intestazione h1 {
-      margin-top: 60px;
-      font-size: 32px;
-  }
-  section.intestazione p {
-      font-size: 17px;
-      padding:0 0 50px 0;
-      margin:0 100px 0 100px;
-  }
+
 }
 
 @media(max-width:800px){
-  section.intestazione p {
-      font-size: 16px;
-      padding:0 0 80px 0;
-      margin:0 90px 0 90px;
+  
+  .intestazione-generale h1{
+    font-size: 34px; 
   }
-
-  section.intestazione img{
-    width: 85%;
-}
+  
+  .intestazione-testo-centratosx {
+    width: 70%;
+    font-size: 16px;  
+  }
+  
 
 }
 
 @media(max-width:700px){
-  section.intestazione p {
-      font-size: 15px;
-      padding:0 0 50px 0;
-      margin:0 50px 0 50px;
+
+  .intestazione-generale h1{
+    font-size: 32px; 
   }
 
-  section.intestazione img{
-    width: 81%;
-}
+  .intestazione-testo-centratosx {
+    width: 72%;
+    font-size: 15px;  
+  }
 
 
 }
 
 @media (max-width:500px){
 
-  section.intestazione p {
-      font-size: 14px;
-      padding:0 0 50px 0;
-      margin:0 30px 0 30px;
-  }
-  section.intestazione h1 {
-      margin-top: 60px;
-      font-size: 28px;
-      text-align:center;
+  .intestazione-generale h1{
+    font-size: 28px; 
   }
 
-  section.intestazione img{
-    width: 100%;
-}
+  .intestazione-testo-centratosx {
+    width: 78%;
+    font-size: 14px;  
+  }
+
 
 }
 
 @media(max-width:360px){
-  section.intestazione p {
-      font-size: 13px;
-      padding:0 0 50px 0;
-      margin:0 20px 0 20px;
+
+  .intestazione-generale h1{
+    font-size: 26px; 
+  }
+
+
+  .intestazione-testo-centratosx {
+    font-size: 13px;  
   }
 }
 
@@ -430,7 +417,7 @@ FINE INTESTAZIONE + PARAGRAFO INTESTAZIONE
 
 .contenitore-2 {
  /* background-color:greenyellow;*/
-  padding: 250px 0px 0px 0px;
+  padding: 300px 0px 110px 0px;
 
 }
 
@@ -467,36 +454,7 @@ padding: 50px;
 
 
 
-.con-noi {
-  margin: 140px 0px 0px 0px;
 
-}
-
-.con-noi h2{
-
-  text-align: center;
-  color:#4B6A3E;
-  font-size: 36px;
-  font-weight: bold;
-  
-}
-
-.container-sx-centrale {
-  display: flex;
-  justify-content: center;
- /* background-color: rgb(204, 0, 255);*/
-
-}
-
-.testo-centratosx {
-  text-align: left;
-  margin: 0 auto;
-  width: 40%;
-
-  font-size: 17px;  
-  font-weight: normal;
-
-}
 
 
 
@@ -558,7 +516,18 @@ padding: 50px;
 
     }
 
+
+
+
+    
     @media (max-width: 1200px) {
+      section.sezione-gruppo-rettangolo-home {
+
+          display:grid;
+          grid-template-columns: auto auto 100px;
+          grid-template-rows: 280px 240px;
+        }
+
 
       .overlay-text-immergitea {
         font-size:29px;
@@ -578,6 +547,8 @@ padding: 50px;
     }
 
     @media (max-width: 1000px) {
+
+
 
       .overlay-text-immergitea {
         font-size:26px;
@@ -613,35 +584,10 @@ padding: 50px;
           height: 350px;
         }
 
-        .con-noi {
-          margin: 140px 0px 0px 0px;
-        /* background-color: darkblue;*/
-        }
-        
-        .con-noi h2{
-
-          text-align: center;
-          color:#4B6A3E;
-          font-size: 32px;
-          font-weight: bold;
-          
-        }
-        
-        .container-sx-centrale {
-          display: flex;
-          justify-content: center;
 
         
-        }
-        
-        .testo-centratosx {
- 
-          width: 50%;
 
-          font-size: 17px;  
-
-        
-        }
+  
 
         .card {
           max-width: 250px;
@@ -727,30 +673,11 @@ display: none;
         
         }
 
-        .con-noi h2{
-
-          text-align: center;
-          color:#4B6A3E;
-          font-size: 32px;
-          font-weight: bold;
-          
-        }
-        
-        .container-sx-centrale {
-          display: flex;
-          justify-content: center;
 
         
-        }
-        
-        .testo-centratosx {
- 
-          width: 60%;
-
-          font-size: 16px;  
 
         
-        }
+
     }
 
     
@@ -812,30 +739,11 @@ display: none;
         
         }
 
-        .con-noi h2{
-
-          text-align: center;
-          color:#4B6A3E;
-          font-size: 28px;
-   
-          
-        }
-        
-        .container-sx-centrale {
-          display: flex;
-          justify-content: center;
-
-        
-        }
-        
-        .testo-centratosx {
  
-          width: 55%;
-
-          font-size: 15px;  
+        
 
         
-        }
+
 
 
 
@@ -1703,6 +1611,12 @@ INIZIO TIPI DI TE
 --------------------------------------------------------------
 -------------------------------------------------------------*/
 
+.immagini-tè img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
 
 
 
@@ -1848,6 +1762,7 @@ div.usi_culinari p{
 }
 @media(max-width:960px){
 
+
   section.esempi h3{
       font-size: 24px;
       padding: 60px 0 0 0;
@@ -1906,6 +1821,7 @@ div.usi_culinari p{
 }
 @media(max-width:780px){
 
+
   section.esempi_tè{
       grid-template-columns: auto 620px auto;
       grid-template-rows: 650px;
@@ -1956,6 +1872,7 @@ div.usi_culinari p{
   }
 }
 @media(max-width:700px){
+
 
   div.lista{
       height:650px;
@@ -2034,6 +1951,10 @@ div.usi_culinari p{
   }
 }
 @media (max-width:550px){
+
+  .immagini-tè img{
+    width: 100%;
+  }
 
   section.esempi h3{
       font-size: 22px;
@@ -2560,7 +2481,7 @@ div.f{
       }
 
   div.te p{
-    font-size: 17px;
+    font-size: 16px;
       }
 
     section.car {
@@ -2576,7 +2497,7 @@ div.f{
  
     div.d p{
       padding: 30px;
-      font-size: 17px;
+      font-size: 16px;
       line-height: 130%;
         width: 450px;
     }
@@ -2586,7 +2507,7 @@ div.f{
 
   div.f p{
     padding: 30px;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 130%;
       width: 450px;
   }
@@ -2772,13 +2693,13 @@ line-height: 128%;
     }
       div.d p{
 
-        font-size: 12px;
+        font-size: 15px;
         line-height: 130%;
           width: 420px;
       }
       div.f p{
 
-        font-size: 12px;
+        font-size: 15px;
         line-height: 130%;
           width: 420px;
       }
@@ -2891,7 +2812,7 @@ span.tit  {
     div.so p {
       margin: auto;
       line-height: 130%;
-        font-size: 13px; 
+        font-size: 14px; 
       }
     
       section.ca{
@@ -2901,13 +2822,13 @@ span.tit  {
       }
       span.tit  {
         font-weight: bold;
-        font-size: 14px;
+        font-size: 15px;
        }
        
       div.t p {
         margin: auto;
         padding: 30px;
-        font-size: 13px;
+        font-size: 14px; 
         width: auto;
       }
 
@@ -2924,7 +2845,7 @@ span.tit  {
 
   div.te p{
     grid-column: 2;
-    font-size: 13px;
+    font-size: 14px; 
       }
     section.car {
       display: grid;
@@ -2938,7 +2859,7 @@ span.tit  {
     }
 
     div.d p{
-      font-size: 13px;
+      font-size: 14px; 
       line-height: 130%;
     padding: 40px;
     width:auto;
@@ -2949,7 +2870,7 @@ span.tit  {
   div.f p{
     width: auto;
     padding: 40px;
-    font-size: 13px;
+    font-size: 14px; 
     line-height: 130%;
 
   }
@@ -3066,6 +2987,197 @@ FINE PRODUTTORI DI TE
 -------------------------------------------------------------*/
 
 
+
+
+
+
+
+/*------------------------------------------------------------
+---------------------------------------------------------------
+--------------------------------------------------------------
+INTESTAZIONE TITOLI EVENTI
+---------------------------------------------------------------
+---------------------------------------------------------------
+--------------------------------------------------------------*/
+
+
+
+ h1.tit-festival{
+  color:#4B6A3E;
+  text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 50px 0px 0px 0px;
+    line-height:  130%;
+  }
+  span.ho{
+      font-weight: bold;
+  color: #95BF74;
+  }
+
+
+  div.cope{
+      font-size: 17px;
+      line-height:  130%;
+
+
+    }
+    
+    div.cope {
+      margin:auto;
+      display: grid;
+      grid-column: 2;
+
+
+    }
+
+    section.coper {
+      display: grid;
+      grid-template-columns: 230px auto 230px ;
+      grid-template-rows: auto 300px;
+
+
+    }  
+
+    @media (max-width:1200px) { 
+      div.cope{
+        font-size: 17px;
+        line-height:  130%;
+      }
+
+    }
+
+    @media (max-width:1000px) { 
+      section.coper {
+        display: grid;
+        grid-template-columns: 100px auto 100px ;
+        grid-template-rows: auto 160px;
+      }
+        
+        div.cope{
+          font-size: 17px; 
+          line-height:  130%;
+          }  
+    }   
+    
+    @media (max-width:800px) { 
+      h1.tit-festival{
+        font-size: 32px;
+        }
+
+      div.cope{
+        font-size: 16px; 
+        line-height:  130%;
+        }
+                  
+   section.coper {
+    display: grid;
+    grid-template-columns: 100px auto 100px ;
+    grid-template-rows: auto 120px;
+      }
+    }
+
+    @media (max-width:700px) { 
+      h1.tit-festival{
+        font-size: 32px;
+        }
+       
+       div.cope{
+       font-size: 15px; 
+       line-height:  130%;
+       }
+        
+  section.coper {
+    display: grid;
+    grid-template-columns: 100px auto 100px ;
+    grid-template-rows: auto 100px;
+  }
+}
+
+@media (max-width:600px) {   
+
+div.cope{
+  font-size: 14px; 
+    line-height:  130%;
+  }
+
+
+section.coper {
+  display: grid;
+  grid-template-columns: 100px auto 100px ;
+  grid-template-rows: auto 80px;
+}
+}
+
+@media (max-width:500px) { 
+  div.cope{
+      font-size: 14px; 
+      line-height:  130%;
+    }
+
+  section.coper {
+      display: grid;
+      grid-template-columns: 80px auto 80px ;
+      grid-template-rows: auto 80px;
+    }
+                                 
+h1.tit-festival{
+font-size: 28px;
+}
+}
+
+
+@media (max-width:460px) {                         
+
+
+  section.coper {
+  display: grid;
+   grid-template-columns: 50px auto 50px ;
+  grid-template-rows: auto 60px;
+   }
+
+                  
+    div.cope{
+    font-size: 13px; 
+    line-height:  130%;
+    }
+
+  }
+
+
+  @media (max-width:360px) { 
+
+    section.coper {
+    display: grid;
+    grid-template-columns: 50px auto 50px ;
+    grid-template-rows: auto 50px;
+    }
+
+    h1.tit-festival{
+      font-size: 26px;
+      }
+      
+      div.cope{
+        font-size: 13px; 
+          line-height:  130%;
+        }
+
+
+  }
+
+    
+/* ------------------------------------------------------------
+-----------------------------------------------------------
+--------------------------------------------------------------
+FINE INTESTAZIONE EVENTI
+--------------------------------------------------------------
+--------------------------------------------------------------
+-------------------------------------------------------------*/
+
+
+
+
+
 /* ------------------------------------------------------------
 -----------------------------------------------------------
 --------------------------------------------------------------
@@ -3076,10 +3188,7 @@ INIZIO EVENTI
 
 
 
-span.ho{
-  font-weight: bold;
-  color: #95BF74;
-  }
+
 
     
 section.coppie{
@@ -3119,10 +3228,14 @@ object-fit: contain;
 padding-right: 40px;
 }     
   
+
+
 section.grid-eventi{
+
 display: grid;
 grid-template-columns:  350px auto auto ;
 grid-template-rows: 200px 420px;
+
 
 }
 
