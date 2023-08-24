@@ -2182,23 +2182,6 @@ strong{
   font-weight: bold;
 }
 
-div.so{
-  font-size: 17px;
-  line-height:  130%;
-}
-
-div.so {
-margin: auto;
-  padding: 5px;
-  display: grid;
-  grid-column: 2;
-}
-
-section.copertina {
-  display: grid;
-  grid-template-columns: 180px  auto 180px;
-  grid-template-rows: 180px 80px;
-}
 
 section.cop{
   display: grid;
@@ -2360,21 +2343,12 @@ div.f{
 }
   }
   @media (max-width:1000px) { 
-    section.copertina {
-      display: grid;
-      grid-template-rows: 180px 30px ;
-      grid-template-columns:120px auto 120px ;
-    }
+
     section.cop {
       display: grid;
       grid-template-rows: 400px ;
     }
 
-    div.so p {
-      margin: auto;
-        font-size: 17px; 
-        line-height: 130%;
-      }
       section.ca{
         display: grid;
         grid-template-columns: auto auto 600px;
@@ -2448,11 +2422,6 @@ div.f{
   }
   
   @media (max-width:800px) { 
-    section.copertina {
-      display: grid;
-      grid-template-columns:80px auto 80px ;
-      grid-template-rows: 180px 40px ;
-    }
    
     section.cop {
       display: grid;
@@ -2522,22 +2491,11 @@ div.f{
   }
 
   @media (max-width:700px) { 
-     section.copertina {
-      display: grid;
-      grid-template-columns:70px auto 70px ;
-      grid-template-rows: 180px 40px ;
-    }
-   
     section.cop {
       display: grid;
       grid-template-rows: 300px ;
     }
 
-    div.so p {
-      margin: auto;
-        font-size: 15px; 
-        line-height: 130%;
-      }
       section.ca{
         display: grid;
         grid-template-columns: auto auto 480px;
@@ -2571,32 +2529,32 @@ span.tit  {
       }
     section.car {
       display: grid;
-      grid-template-columns: 50px  auto auto ;
+      grid-template-columns: 0px  auto auto ;
       grid-template-rows: 180px 200px;
     }
     section.c {
       display: grid;
-      grid-template-columns:   auto auto 50px;
+      grid-template-columns:   auto auto 0px;
       grid-template-rows: 180px 200px;
     }
 
     
  
     div.d p{
-      padding: 20px;
+      padding: 10px;
       font-size: 15px;
       line-height: 130%;
-        width: 480px;
+        width: 450px;
     }
   div.d{
     height: 300px;
   }
 
   div.f p{
-    padding: 20px;
+    padding: 10px;
     font-size: 15px;
     line-height: 130%;
-      width: 480px;
+      width: 450px;
   }
 div.f{
   height: 300px;
@@ -2610,22 +2568,11 @@ div.f{
 
   }
   @media (max-width:600px) { 
-    section.copertina {
-      display: grid;
-      grid-template-columns: 60px auto 60px ;
-      grid-template-rows: 180px 40px ;
-    }
-   
     section.cop {
       display: grid;
       grid-template-rows: 250px ;
     }
 
-    div.so p {
-      margin: auto;
-line-height: 128%;
-        font-size: 15px; 
-      }
       section.ca{
         display: grid;
         grid-template-columns: auto auto 450px;
@@ -2717,21 +2664,11 @@ line-height: 128%;
     }
    
   @media (max-width:500px) { 
-    section.copertina {
-      display: grid;
-      grid-template-columns:60px auto 60px ;
-      grid-template-rows: 180px 40px ;
-    }
-   
     section.cop {
       display: grid;
       grid-template-rows: 220px ;
     }
 
-    div.so p {
-      margin: auto;
-        font-size: 14px; 
-      }
       section.ca{
         display: grid;
         grid-template-columns:40px auto ;
@@ -2795,25 +2732,11 @@ span.tit  {
   }
 
   @media (max-width:460px) { 
-    section.copertina {
-      padding: 20px;
-      display: grid;
-      grid-template-columns:20px auto 20px ;
-      grid-template-rows: 200px ;
-    }
-   
- 
     section.cop {
       display: grid;
       grid-template-columns: auto ;
       grid-template-rows: 180px ;
     }
-
-    div.so p {
-      margin: auto;
-      line-height: 130%;
-        font-size: 14px; 
-      }
     
       section.ca{
         display: grid;
@@ -2866,42 +2789,36 @@ span.tit  {
 
     }
 
-
   div.f p{
     width: auto;
     padding: 40px;
     font-size: 14px; 
     line-height: 130%;
-
   }
+
     .imag {
       padding: 0px;
     align-items: center;
       max-width: 40%;
       object-fit: contain;
     } 
-
   }
-  @media (max-width:360px) { 
-    section.copertina {
-      padding: 20px;
-      display: grid;
-      grid-template-columns:10px auto 10px ;
-      grid-template-rows:100px 100px;
+
+    @media (max-width:400px) { 
+      section.a{
+        display: grid;
+        grid-template-columns: 10px auto 10px;
+        grid-template-rows: 320px;
+        padding: 20px;
     }
-   
- 
+  }
+  
+  @media (max-width:360px) { 
     section.cop {
       display: grid;
       grid-template-columns: auto ;
       grid-template-rows: 150px ;
     }
-
-    div.so p {
-      margin: auto;
-      line-height: 130%;
-        font-size: 13px; 
-      }
     
       section.ca{
         display: grid;
@@ -2992,192 +2909,6 @@ FINE PRODUTTORI DI TE
 
 
 
-/*------------------------------------------------------------
----------------------------------------------------------------
---------------------------------------------------------------
-INTESTAZIONE TITOLI EVENTI
----------------------------------------------------------------
----------------------------------------------------------------
---------------------------------------------------------------*/
-
-
-
- h1.tit-festival{
-  color:#4B6A3E;
-  text-align: center;
-    font-weight: bold;
-    font-size: 36px;
-    padding: 50px 0px 0px 0px;
-    line-height:  130%;
-  }
-  span.ho{
-      font-weight: bold;
-  color: #95BF74;
-  }
-
-
-  div.cope{
-      font-size: 17px;
-      line-height:  130%;
-
-
-    }
-    
-    div.cope {
-      margin:auto;
-      display: grid;
-      grid-column: 2;
-
-
-    }
-
-    section.coper {
-      display: grid;
-      grid-template-columns: 230px auto 230px ;
-      grid-template-rows: auto 300px;
-
-
-    }  
-
-    @media (max-width:1200px) { 
-      div.cope{
-        font-size: 17px;
-        line-height:  130%;
-      }
-
-    }
-
-    @media (max-width:1000px) { 
-      section.coper {
-        display: grid;
-        grid-template-columns: 100px auto 100px ;
-        grid-template-rows: auto 160px;
-      }
-        
-        div.cope{
-          font-size: 17px; 
-          line-height:  130%;
-          }  
-    }   
-    
-    @media (max-width:800px) { 
-      h1.tit-festival{
-        font-size: 32px;
-        }
-
-      div.cope{
-        font-size: 16px; 
-        line-height:  130%;
-        }
-                  
-   section.coper {
-    display: grid;
-    grid-template-columns: 100px auto 100px ;
-    grid-template-rows: auto 120px;
-      }
-    }
-
-    @media (max-width:700px) { 
-      h1.tit-festival{
-        font-size: 32px;
-        }
-       
-       div.cope{
-       font-size: 15px; 
-       line-height:  130%;
-       }
-        
-  section.coper {
-    display: grid;
-    grid-template-columns: 100px auto 100px ;
-    grid-template-rows: auto 100px;
-  }
-}
-
-@media (max-width:600px) {   
-
-div.cope{
-  font-size: 14px; 
-    line-height:  130%;
-  }
-
-
-section.coper {
-  display: grid;
-  grid-template-columns: 100px auto 100px ;
-  grid-template-rows: auto 80px;
-}
-}
-
-@media (max-width:500px) { 
-  div.cope{
-      font-size: 14px; 
-      line-height:  130%;
-    }
-
-  section.coper {
-      display: grid;
-      grid-template-columns: 80px auto 80px ;
-      grid-template-rows: auto 80px;
-    }
-                                 
-h1.tit-festival{
-font-size: 28px;
-}
-}
-
-
-@media (max-width:460px) {                         
-
-
-  section.coper {
-  display: grid;
-   grid-template-columns: 50px auto 50px ;
-  grid-template-rows: auto 60px;
-   }
-
-                  
-    div.cope{
-    font-size: 13px; 
-    line-height:  130%;
-    }
-
-  }
-
-
-  @media (max-width:360px) { 
-
-    section.coper {
-    display: grid;
-    grid-template-columns: 50px auto 50px ;
-    grid-template-rows: auto 50px;
-    }
-
-    h1.tit-festival{
-      font-size: 26px;
-      }
-      
-      div.cope{
-        font-size: 13px; 
-          line-height:  130%;
-        }
-
-
-  }
-
-    
-/* ------------------------------------------------------------
------------------------------------------------------------
---------------------------------------------------------------
-FINE INTESTAZIONE EVENTI
---------------------------------------------------------------
---------------------------------------------------------------
--------------------------------------------------------------*/
-
-
-
-
-
 /* ------------------------------------------------------------
 -----------------------------------------------------------
 --------------------------------------------------------------
@@ -3188,20 +2919,20 @@ INIZIO EVENTI
 
 
 
-
-
-    
 section.coppie{
 display:grid;
 grid-template-columns: 20px auto auto 60px ;
 grid-template-rows: auto 280px;
 }
+
 div.coppie_para{
 grid-column: 2;
 display:flex;
 align-items: center;
 justify-content: center;
+
 }
+
 div.text{
 font-size: 17px;
 grid-column: 3;
@@ -3211,6 +2942,7 @@ justify-content: center;
 padding: 50px;
 width: 500px;
 }
+
 div.coppie_para img{
 max-width:40%;
 object-fit: contain;
@@ -3219,7 +2951,6 @@ padding: 20px;
 
 div.coppie_para p{
 font-size: 17px;
-
 }
 
 .imm {
@@ -3231,12 +2962,9 @@ padding-right: 40px;
 
 
 section.grid-eventi{
-
 display: grid;
 grid-template-columns:  350px auto auto ;
-grid-template-rows: 200px 420px;
-
-
+grid-template-rows: 500px 120px;
 }
 
 div.par-eventi{
@@ -3326,10 +3054,6 @@ grid-template-columns:  150px auto auto ;
 grid-template-rows: 200px 280px;
 }     
 
-
-
-  
-        
 div.par-eventi{
   background-color: #D9D9D9;
   height: 280px;
@@ -3368,18 +3092,12 @@ padding: 30px;
 }
 
 @media (max-width:800px) { 
-
-              
-
-
 section.grid-eventi{
  display: grid;
 grid-template-columns:  150px auto auto ;
 grid-template-rows: 200px 230px;
 }         
        
-
-
   section.coppie{
     display:grid;
     grid-template-columns: 20px auto 340px 20px  ;
