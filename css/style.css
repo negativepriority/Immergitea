@@ -999,6 +999,7 @@ FINE PAGINA HOME
   
       }
 
+
   }
 
 
@@ -1010,6 +1011,7 @@ FINE PAGINA HOME
     }
     
     .grid-archivio {
+      gap: 40px; 
     margin: 70px auto; 
     }
 
@@ -1042,6 +1044,24 @@ FINE PAGINA HOME
       text-align: left;
   
       }
+
+  }
+
+  @media (max-width: 375px){
+
+    .card-archivio {
+      max-width: 200px;
+      padding: 18px;
+
+    }
+    
+    .grid-archivio {
+    padding: 0px;
+    margin: 30px auto ;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    } 
+
 
   }
 
@@ -3526,6 +3546,7 @@ div.ilteam h2{
 
   .cambiocolore {
     color: #95BF74;
+    font-weight:bold;
    
   }
 
