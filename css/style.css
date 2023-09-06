@@ -1183,7 +1183,7 @@ div.cardraccolta{
 
 }
 .immaginera img{
-  max-width: 100%;
+  max-width: 90%;
   object-fit: contain;
   grid-column: 2;
   
@@ -1250,6 +1250,12 @@ padding-right: 40px;
 padding-bottom: 40px;
 
 }
+.immaginera img{
+  max-width: 100%;
+
+  
+}
+
 }
 
 
