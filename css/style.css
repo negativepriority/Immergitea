@@ -253,26 +253,34 @@ FINE NAVBAR+RESPONSIVE NAVBAR
   font-size: 36px;
   font-weight: bold;
   padding:0px 40px 0px 40px;
+
   
 }
 
 .container-sx-centrale {
-  display: flex;
   justify-content: center;
+
+  width:auto;
 }
 
 .intestazione-testo-centratosx {
   text-align: left;
-  margin: 0 auto;
-  width: 60%;
+  margin:  auto;
+  width: 690px;
   font-size: 17px;  
   font-weight: normal;
+  align-items: center;
+
   
 }
 
 
 @media(max-width:1000px){
+  .intestazione-testo-centratosx {
+    width: 500px;
 
+  }
+  
 }
 
 @media(max-width:960px){
@@ -283,11 +291,15 @@ FINE NAVBAR+RESPONSIVE NAVBAR
   
   .intestazione-generale h1{
     font-size: 34px; 
+    
   }
   
   .intestazione-testo-centratosx {
-    width: 70%;
-    font-size: 16px;  
+    width: 450px;
+
+    font-size: 16px; 
+
+
   }
   
 
@@ -300,11 +312,20 @@ FINE NAVBAR+RESPONSIVE NAVBAR
   }
 
   .intestazione-testo-centratosx {
-    width: 72%;
-    font-size: 15px;  
+    width: 400px;
+    font-size: 15px; 
+
   }
 
 
+}
+
+
+@media(max-width:600px){
+  .intestazione-testo-centratosx {
+    width: 350px;
+
+  }
 }
 
 @media (max-width:500px){
@@ -314,8 +335,9 @@ FINE NAVBAR+RESPONSIVE NAVBAR
   }
 
   .intestazione-testo-centratosx {
-    width: 78%;
+    width: 270px;
     font-size: 14px;  
+
   }
 
 
@@ -329,7 +351,9 @@ FINE NAVBAR+RESPONSIVE NAVBAR
 
 
   .intestazione-testo-centratosx {
+    width: 250px;
     font-size: 13px;  
+
   }
 }
 
@@ -354,7 +378,7 @@ FINE INTESTAZIONE + PARAGRAFO INTESTAZIONE
     position: relative;
     text-align: center;
     color: white;
-    margin: 60px auto;
+
 }
 
   .container-1-home img {
@@ -392,7 +416,7 @@ FINE INTESTAZIONE + PARAGRAFO INTESTAZIONE
 .container4 {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 40px auto;
   display: flex;
   align-items: center;
 
@@ -559,6 +583,14 @@ padding: 50px;
 
       }
 
+      .container4 {
+  
+
+        margin: 65px auto;
+ 
+      
+      }
+
       .div-gruppo-rettangolo-home img{
         max-width:37%;
         }
@@ -645,6 +677,15 @@ display: none;
       }
 
 
+      .container4 {
+  
+  
+                margin: 40px auto;
+         
+              
+              }
+        
+
 
       .div-gruppo-rettangolo-home img{
         max-width:37%;
@@ -690,6 +731,7 @@ display: none;
         width: 60%;
         font-size: 15px;
       }
+
 
 
       .div-gruppo-rettangolo-home img{
@@ -758,10 +800,18 @@ display: none;
       width: 81%;
       font-size: 15px;
     }
+
+    .container4 {
+  
+
+              margin: 30px auto;
+       
+            
+            }
     
     .contenitore-2 {
       /* background-color:greenyellow;*/
-       padding: 180px 0px 0px 0px;
+       padding: 220px 0px 0px 0px;
 
      }
      
@@ -823,6 +873,12 @@ display: none;
 
 
   @media (max-width: 500px){
+    
+    .container4 {
+
+      margin: 10px auto;
+    }
+
     .div-gruppo-rettangolo-home p {
       width:350px;
       font-size: 14px;    
@@ -835,6 +891,14 @@ display: none;
       font-size: 14px;
     }
   }
+
+  .contenitore-2 {
+    /* background-color:greenyellow;*/
+     padding: 190px 0px 0px 0px;
+
+   }
+
+
 
   @media (max-width: 430px){
     .overlay-text-immergitea {
