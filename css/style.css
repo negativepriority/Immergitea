@@ -1162,17 +1162,25 @@ INIZIO LAVORAZIONE TE
 --------------------------------------------------------------
 --------------------------------------------------------------
 -------------------------------------------------------------*/
+.square-fasi{
+
+  background-color: #493548;
+  padding:10px 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 40%;
+ 
+}
+
+.nullo{
+  margin-bottom:120px;
+}
 
 
-
-
-.titolo{
-
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 280px auto 280px;
-  grid-template-rows: 300px ;
- }
  div.lavorazione{
   grid-column: 2;
 
@@ -1188,19 +1196,25 @@ INIZIO LAVORAZIONE TE
  }
 
  .square{
-  width: 50px;
-  height: 50px;
+
   background-color: #493548;
-  display: flex;
+  padding:10px 20px;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 24px;
   font-weight: bold;
-  
- 
+  text-align: center;
  
 }
+
+.titolo-lavorazione {
+  color: #493548;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
   .intestazione-lavorazione-tè{
 
       margin: 0px;
@@ -1211,21 +1225,12 @@ INIZIO LAVORAZIONE TE
   
   
 
-  div.testo-lavorazione-tè {
-      display: flex;
-      
-      grid-column: 2 ;
-     
-      margin: 0px;
-
-  }
-
 
   .paragraforaccolta{
 
       display: grid;
-       grid-template-columns:  600px auto ;
-      grid-template-rows: auto 200px;
+      grid-template-columns:  1fr 1fr ;
+      padding-bottom: 120px;
       gap: 80px;
       padding-left:  50px;
       
@@ -1272,16 +1277,12 @@ div.testo-lavorazione-tè h2{
 
 @media (max-width:1200px){
 
+
+
 div.lavorazione h1{
   font-size: 35px;
 }
-.titolo{
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 150px auto 150px;
-grid-template-rows: 300px ;
 
- }
  div.lavorazione p{
   font-size: 17px;
  }
@@ -1290,13 +1291,15 @@ grid-template-rows: 300px ;
   font-size: 30px;
 
 }
-.square{
-width: 45px;
-height: 45px;
 
+.square-fasi{
+  padding:10px 20px;
+  font-size: 24px;
+  width: 40%;
 }
+
 p.square{
-font-size: 17px;
+font-size: 24px;
 }
 .cardraccolta p{
 font-size: 17px;
@@ -1306,12 +1309,12 @@ padding-left: 40px;
 }
 .paragraforaccolta{
 display: grid;
- grid-template-columns:  500px auto ;
-grid-template-rows: auto 200px;
+grid-template-columns:  1fr 1fr ;
+padding-bottom: 120px;
 gap: 80px;
 padding-left: 40px;
 padding-right: 40px;
-padding-bottom: 40px;
+
 
 }
 .immaginera img{
@@ -1322,19 +1325,24 @@ padding-bottom: 40px;
 
 }
 
+@media (max-width:1100px){
+
+
+  .paragraforaccolta{
+  grid-template-columns:  1fr 1fr;
+  }
+
+
+}
+
 
 @media (max-width:1000px){
+
 
 div.lavorazione h1{
   font-size: 34px;
 }
-.titolo{
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 150px auto 150px;
-grid-template-rows: 300px ;
 
- }
  div.lavorazione p{
   font-size: 17px;
  }
@@ -1343,25 +1351,27 @@ grid-template-rows: 300px ;
   font-size: 28px;
 
 }
-.square{
-width: 40px;
-height: 40px;
 
+.square-fasi{
+  padding:10px 20px;
+  font-size: 23px;
+  width: 40%;
 }
+
 p.square{
-font-size: 16px;
+font-size: 23px;
 }
 .intestazione-lavorazione-tè{
 padding-left: 40px;
 }
 .paragraforaccolta{
 display: grid;
- grid-template-columns:  450px auto ;
-grid-template-rows: auto 200px;
+grid-template-columns:  1fr 1fr;
+padding-bottom: 110px;
 gap: 40px;
 padding-left: 40px;
 padding-right: 40px;
-padding-bottom: 40px;
+
 
 }
 .cardraccolta p{
@@ -1379,16 +1389,12 @@ grid-column: 2;
 @media (max-width:900px){
 
 
+
+
 div.lavorazione h1{
   font-size: 32px;
 }
-.titolo{
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 150px auto 150px;
-grid-template-rows: 300px ;
 
- }
  div.lavorazione p{
   font-size: 17px;
  }
@@ -1397,25 +1403,26 @@ grid-template-rows: 300px ;
   font-size: 26px;
 
 }
-.square{
-width: 40px;
-height: 40px;
-
+.square-fasi{
+  padding:10px 20px;
+  font-size: 22px;
+  width: 40%;
 }
+
 p.square{
-font-size: 16px;
+font-size: 22px;
 }
 .intestazione-lavorazione-tè{
 padding-left: 40px;
 }
 .paragraforaccolta{
 display: grid;
- grid-template-columns:  400px auto ;
-grid-template-rows: auto 200px;
+grid-template-columns:  1fr 1fr;
+
 gap: 30px;
 padding-left: 40px;
 padding-right: 40px;
-padding-bottom: 40px;
+padding-bottom: 130px;
 
 
 }
@@ -1437,13 +1444,7 @@ grid-column: 2;
 div.lavorazione h1{
   font-size: 30px;
 }
-.titolo{
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 150px auto 150px;
-grid-template-rows: 300px ;
 
- }
  .lavorazione p{
   font-size: 16px;
  }
@@ -1455,21 +1456,16 @@ div.testo-lavorazione-tè h2{
 .intestazione-lavorazione-tè{
 padding-left: 40px;
 }
-.square {
-width: 38px;
-height: 38px;
-}
-p.square{
-font-size: 14px;
-}
+
+
 .paragraforaccolta{
 display: grid;
- grid-template-columns:  370px auto ;
-grid-template-rows: auto 100px;
+ grid-template-columns:  300px auto ;
+ padding-bottom: 120px;
 gap: 30px;
 padding-left: 40px;
 padding-right: 40px;
-padding-bottom: 40px;
+
 
 }
 .cardraccolta p{
@@ -1485,194 +1481,98 @@ grid-column: 2;
 }
 @media (max-width:700px){
 
-.intestazione-lavorazione-tè{
-display: flex;
-justify-content: center;
-padding-right: 30px;
-padding-left: 40px;
-}
 
-div.lavorazione h1{
-  font-size: 28px;
-}
-.titolo{
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 60px auto 60px;
-grid-template-rows: 200px ;
-
- }
- div.lavorazione p{
-  font-size: 15px;
- }
- 
- div.testo-lavorazione-tè h2{
-  font-size: 22px;
-
+.paragraforaccolta{
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom:120px;
 }
 
 .square {
-width: 36px;
-height: 36px;
-}
-p.square{
-font-size: 14px;
-}
-.paragraforaccolta{
-display: grid;
- grid-template-columns:  400px auto ;
-grid-template-rows: auto 200px;
-gap: 30px;
-padding-left: 40px;
-padding-right: 40px;
-padding-bottom: 40px;
-display: flex;
-flex-direction: column;
-flex-direction: column-reverse;
-justify-content: center;
-align-items: center;
-
-}
-div.cardraccolta p{
-font-size: 15px;
-width: auto;
+  font-size: 21px;
+  padding:7px 17px;
 }
 
-.immaginera {
-display: flex;
-justify-content: center;
-align-items: center;
-
+.square-fasi{
+  padding:10px 20px;
+  font-size: 21px;
+  width: 40%;
 }
 
-.immaginera img{
-max-width: 70%;
-object-fit: contain;
-grid-column: 2;
-
-}
-div.cardraccolta p{ 
-display: grid;
-grid-column: 1;
-grid-template-columns: 400px;
-
-}
-}
-@media (max-width:600px){
-
-div.cardraccolta p{ 
-display: grid;
-grid-column: 1;
-grid-template-columns: 350px;
-font-size: 15px;
-
-}
-div.lavorazione h1{
-font-size: 26px;
-}
-.titolo{
-padding: 20px;
-display: grid;
-grid-template-columns: 50px auto 50px;
-grid-template-rows: 200px ;
+.titolo-lavorazione {
+  font-size: 21px;
 }
 
+.cardraccolta p{
+  font-size: 15px;
+  }
 
-div.lavorazione p{
-font-size: 15px;
-}
-
-
+  .cardraccolta {
+    width:80%;
+    margin:auto;
+  }
 
 }
 
 
 @media (max-width:500px){
 
+  .square {
+    font-size: 19px;
+    padding:6px 16px;
+  }
 
-div.cardraccolta p{ 
-display: grid;
-grid-column: 1;
-grid-template-columns: 300px;
-font-size: 14px;
-
-}
-div.lavorazione h1{
-font-size: 25px;
-}
-.titolo{
-padding: 20px;
-display: grid;
-grid-template-columns: 30px auto 30px;
-grid-template-rows: 200px ;
-}
-
-
-div.lavorazione p{
-font-size: 14px;
-}
+  .square-fasi{
+    padding:10px 20px;
+    font-size: 19px;
+    width: 40%;
+  }
+  
+  .titolo-lavorazione {
+    font-size: 19px;
+  }
+  
+  .cardraccolta p{
+    font-size: 14px;
+    }
+  
+    .cardraccolta {
+      width:80%;
+    }
 
 }
 
 @media (max-width:400px){
 
 
-div.cardraccolta p{ 
-display: grid;
-grid-column: 1;
-grid-template-columns: 220px;
-font-size: 13px;
 
-}
-div.lavorazione h1{
-font-size: 22px;
-}
-.titolo{
-padding: 20px;
-display: grid;
-grid-template-columns: 10px auto 10px;
-grid-template-rows: 150px ;
-}
-
-div.lavorazione p{
-font-size: 13px;
-}
 
 }
 
 @media (max-width:364px){
 
-div.cardraccolta p{ 
-display: grid;
-grid-column: 1;
-grid-template-columns: 200px;
-font-size: 13px;
+  .square {
+    font-size: 17px;
+    padding:5px 15px;
+  }
 
-}
-div.lavorazione h1{
-font-size: 20px;
-}
-.titolo{
-padding: 20px;
-display: grid;
-grid-template-columns: 10px auto 10px;
-grid-template-rows: 150px ;
-}
-
-div.lavorazione p{
-font-size: 13px;
-}
-.square {
-width: 32px;
-height: 32px;
-}
-p.square{
-font-size: 12px;
-}
-div.testo-lavorazione-tè h2{
-font-size: 20px;
-
-}
+  .square-fasi{
+    padding:10px 20px;
+    font-size: 17px;
+    width: 40%;
+  }
+  
+  .titolo-lavorazione {
+    font-size: 17px;
+  }
+  
+  .cardraccolta p{
+    font-size: 13px;
+    }
+  
+    .cardraccolta {
+      width:80%;
+    }
 }
 
 
@@ -2260,7 +2160,7 @@ FINE TIPI DI TE + RESPONSIVE
 /* ------------------------------------------------------------
 -----------------------------------------------------------
 --------------------------------------------------------------
-INZIO PRODUTTORI DI TE (FIXARE RESPONSIVE)
+INZIO PRODUTTORI DI TE 
 --------------------------------------------------------------
 --------------------------------------------------------------
 -------------------------------------------------------------*/
