@@ -2200,7 +2200,7 @@ span.tit  {
   div.t{
     background-color:#D9D9D9;
     height: 550px;
-    grid-column: 3;
+    grid-column: 2;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -2210,16 +2210,16 @@ align-items: center;
 
   section.ca{
     display: grid;
-    grid-template-columns: auto auto 700px;
-    grid-template-rows:  700px;
+    grid-template-columns: auto 700px auto;
+    padding-bottom:140px;
    
   }
 
   section.a{
     display: grid;
     grid-template-columns: 250px 532px auto;
-    grid-template-rows: 400px 100px;
-    padding: 20px;
+    padding-bottom:180px;
+
   }
 
   div.te {
@@ -2239,7 +2239,7 @@ font-size: 17px;
   section.car{
     display: grid;
     grid-template-columns:  250px auto auto ;
-    grid-template-rows: 200px 400px;
+    padding-bottom:140px;
   }
 
  div.d{
@@ -2267,7 +2267,7 @@ font-size: 17px;
   section.c{
     display: grid;
     grid-template-columns:   auto auto 250px;
-    grid-template-rows: 200px 400px;
+    padding-bottom:140px;
   }
 
  div.f{
@@ -2297,6 +2297,9 @@ font-size: 17px;
     object-fit: contain;
   }
     @media (max-width:1200px) { 
+
+
+
     section.cop {
       display: grid;
       grid-template-rows: 460px ;
@@ -2304,7 +2307,7 @@ font-size: 17px;
     section.car {
       display: grid;
       grid-template-columns:  150px auto auto ;
-      grid-template-rows: 200px 400px;
+
     }
     section.c {
       display: grid;
@@ -2341,8 +2344,8 @@ div.f{
 
       section.ca{
         display: grid;
-        grid-template-columns: auto auto 600px;
-        grid-template-rows:  560px;
+        grid-template-columns: auto 600px auto;
+
       }
 
       span.tit  {
@@ -2363,19 +2366,25 @@ div.f{
 
       section.a{
         display: grid;
-        grid-template-columns: 150px 480px auto;
-        grid-template-rows: 450px;
-        padding: 20px;
+        grid-template-columns:auto;
+
+
       }
 
   div.te p{
     font-size: 17px;
+    width:500px; /*SISTEMARE WIDTH*/
+    margin:auto;
+      }
+      div.te {
+        grid-column: 1;
+        
       }
 
     section.car {
       display: grid;
       grid-template-columns:  100px auto auto ;
-      grid-template-rows: 200px 300px;
+
     }
     section.c {
       display: grid;
@@ -2412,7 +2421,7 @@ div.f{
   }
   
   @media (max-width:800px) { 
-   
+
     section.cop {
       display: grid;
       grid-template-rows: 330px ;
@@ -2421,8 +2430,8 @@ div.f{
 
       section.ca{
         display: grid;
-        grid-template-columns: auto auto 550px;
-        grid-template-rows:  580px;
+        grid-template-columns: auto 550px auto;
+
       }
  
     
@@ -2434,24 +2443,27 @@ div.f{
       }
       section.a{
         display: grid;
-        grid-template-columns: 150px 450px auto;
-        grid-template-rows: 330px;
-        padding: 20px;
+        grid-template-columns: auto;
+
       }
 
   div.te p{
     font-size: 16px;
+    margin:auto;
+    width:450px;
       }
+
+
 
     section.car {
       display: grid;
       grid-template-columns:  50px auto auto ;
-      grid-template-rows: 550px;
+
     }
     section.c {
       display: grid;
       grid-template-columns:   auto auto 50px;
-      grid-template-rows: 450px;
+
     }
  
     div.d p{
@@ -2481,6 +2493,7 @@ div.f{
   }
 
   @media (max-width:700px) { 
+
     section.cop {
       display: grid;
       grid-template-rows: 300px ;
@@ -2488,8 +2501,8 @@ div.f{
 
       section.ca{
         display: grid;
-        grid-template-columns: auto auto 480px;
-        grid-template-rows:  450px;
+        grid-template-columns: auto 480px auto;
+
       }
      
 span.tit  {
@@ -2509,23 +2522,23 @@ span.tit  {
 
       section.a{
         display: grid;
-        grid-template-columns: 150px 400px auto;
-        grid-template-rows: 380px;
-        padding: 20px;
+        grid-template-columns: auto;
+
       }
 
   div.te p{
     font-size: 15px;
+    width:390px;
       }
     section.car {
       display: grid;
       grid-template-columns: 0px  auto auto ;
-      grid-template-rows: 180px 200px;
+
     }
     section.c {
       display: grid;
       grid-template-columns:   auto auto 0px;
-      grid-template-rows: 180px 200px;
+
     }
 
     
@@ -2558,6 +2571,9 @@ div.f{
 
   }
   @media (max-width:600px) { 
+
+
+
     section.cop {
       display: grid;
       grid-template-rows: 250px ;
@@ -2565,8 +2581,9 @@ div.f{
 
       section.ca{
         display: grid;
-        grid-template-columns: auto auto 450px;
-        grid-template-rows:  520px;
+        grid-template-columns:auto ;
+  
+
       }
 
       span.tit  {
@@ -2574,11 +2591,16 @@ div.f{
         font-size: 16px;
        }
 
+
+       
     div.t p {
-      margin: auto;
-      padding: 10px;
+    
+      margin:auto;
+      padding-left:70px;
+      padding-right: 70px;
       font-size: 15px;
-      width: 340px;
+width: auto;
+      
     }
     
     div.t h2 {
@@ -2588,32 +2610,43 @@ div.f{
       }
     
       div.t{
-        height: 450px;
+        height: 480px;
       }
 
       section.a{
         display: grid;
-        grid-template-columns: 100px 370px auto;
-        grid-template-rows: 260px;
-        padding: 20px;
+        grid-template-columns:auto;
+
+
       }
 
   div.te p{
     font-size: 15px;
+    width: auto;
+    margin:auto;
+    padding-left:70px;
+    padding-right: 70px;
       }
+      div.te {
+        grid-column: 1;
+      }
+        
+
+
+
+
       section.car {
         display: grid;
         grid-template-columns: auto ;
-        grid-template-rows:750px;
+
       }
       section.c {
         display: grid;
         grid-template-columns:auto ;
-        grid-template-rows: 750px;
+
       
       }
       div.d{
-        grid-column: 2;
         display: flex;
         flex-direction: column;
         flex-direction: column-reverse;
@@ -2623,22 +2656,27 @@ div.f{
     
   
     div.f{
-      grid-column: 1;
+    margin: auto;
       display: flex;
       flex-direction: column;
       height: 600px;
+      margin: auto;
     }
       div.d p{
-
+margin: auto;
         font-size: 15px;
         line-height: 130%;
-          width: 420px;
+          width: auto;
+          padding-left: 70px;
+          padding-right: 70px;
       }
       div.f p{
-
+margin: auto;
         font-size: 15px;
         line-height: 130%;
-          width: 420px;
+        width: auto;
+        padding-left: 70px;
+        padding-right: 70px;
       }
       .imag {
    
@@ -2654,15 +2692,17 @@ div.f{
     }
    
   @media (max-width:500px) { 
+
     section.cop {
       display: grid;
       grid-template-rows: 220px ;
     }
 
       section.ca{
+
         display: grid;
-        grid-template-columns:40px auto ;
-        grid-template-rows:  380px;
+        grid-template-columns:auto ;
+
       }
  
 span.tit  {
@@ -2672,45 +2712,28 @@ span.tit  {
 
     div.t p {
       margin: auto;
-      padding: 30px;
+
       font-size: 14px;
       width: auto;
     }
    
       div.t{
-        height: 360px;
+        height: 500px;
       }
 
-      section.a{
-        display: grid;
-        grid-template-columns:20px auto 20px;
-        grid-template-rows: 320px;
-        padding: 40px;
-      }
 
-  div.te p{
-    grid-column: 2;
-  }
-      section.car {
-        display: grid;
-        grid-template-columns: 20px   auto ;
-        grid-template-rows: 180px 450px;
-      }
-      section.c {
-        display: grid;
-        grid-template-columns:   auto 20px;
-        grid-template-rows: 600px ;
-      }
+
       div.d p{
         font-size: 14px;
         line-height: 130%;
-          width: 420px;
+          width: auto;
+        
       }
       div.f p{
 
         font-size: 14px;
         line-height: 130%;
-          width: 420px;
+        
       }
       .imag {
         padding: 2%;
@@ -2722,6 +2745,7 @@ span.tit  {
   }
 
   @media (max-width:460px) { 
+
     section.cop {
       display: grid;
       grid-template-columns: auto ;
@@ -2731,7 +2755,7 @@ span.tit  {
       section.ca{
         display: grid;
         grid-template-columns:auto ;
-        grid-template-rows:  420px;
+        padding-bottom:80px;
       }
       span.tit  {
         font-weight: bold;
@@ -2740,50 +2764,55 @@ span.tit  {
        
       div.t p {
         margin: auto;
-        padding: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
         font-size: 14px; 
         width: auto;
       }
 
       div.t{
-        height: 380px;
-      }
-
-      section.a{
-        display: grid;
-        grid-template-columns: 10px auto 10px;
-        grid-template-rows: 280px;
-        padding: 20px;
+        height: 400px;
       }
 
   div.te p{
-    grid-column: 2;
     font-size: 14px; 
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+     width: auto;
       }
+
     section.car {
       display: grid;
       grid-template-columns: auto ;
-      grid-template-rows: 400px 250px;
+      padding-bottom:80px;
     }
+
     section.c {
       display: grid;
       grid-template-columns:auto ;
-      grid-template-rows: 400px 250px;
+      padding-bottom:80px;
+    }
+
+    section.a {
+      padding-bottom:80px;
     }
 
     div.d p{
       font-size: 14px; 
       line-height: 130%;
-    padding: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
     width:auto;
 
     }
 
   div.f p{
     width: auto;
-    padding: 40px;
     font-size: 14px; 
     line-height: 130%;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
     .imag {
@@ -2794,16 +2823,12 @@ span.tit  {
     } 
   }
 
-    @media (max-width:400px) { 
-      section.a{
-        display: grid;
-        grid-template-columns: 10px auto 10px;
-        grid-template-rows: 320px;
-        padding: 20px;
-    }
-  }
+    
+
+
   
   @media (max-width:360px) { 
+
     section.cop {
       display: grid;
       grid-template-columns: auto ;
@@ -2813,11 +2838,10 @@ span.tit  {
       section.ca{
         display: grid;
         grid-template-columns: auto ;
-        grid-template-rows:  400px;
       }
       
       div.t{
-        height: 370px;
+        height: 430px;
       }
       
 span.tit  {
@@ -2828,35 +2852,29 @@ span.tit  {
      font-size: 13px;
       }
 
-      section.a{
-        display: grid;
-        grid-template-columns: 10px auto 10px;
-        grid-template-rows: 300px;
-        padding: 20px;
-      }
-
   div.te p{
-    grid-column: 2;
     font-size: 13px;
       }
+
     section.car {
       display: grid;
       grid-template-columns: auto ;
-      grid-template-rows: 580px;
-    }
+
+        }
+
     section.c {
       display: grid;
       grid-template-columns:auto ;
-      grid-template-rows: 300px 200px;
-    
     }
+
     div.d{
       height: 530px;
     }
+
     div.d p{
       font-size: 13px;
       line-height: 130%;
-    padding: 40px;
+
     width:auto;
     }
 
@@ -2865,7 +2883,6 @@ span.tit  {
   }
   div.f p{
     width: auto;
-    padding: 40px;
     font-size: 13px;
     line-height: 130%;
 
