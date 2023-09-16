@@ -158,6 +158,22 @@ justify-content: center;
       width: 100%;
       text-align: left;
     }
+
+    .topnav.responsive .active {
+      background-color: #95BF74;
+      color: #F5FBFB;
+      height: 31px;
+      display: flex;
+      align-items: center;
+   
+     }
+   
+     .topnav.responsive  a:hover {
+       background-color: #F5FBFB;
+       color: black;
+   
+     }
+
   }
 
 
